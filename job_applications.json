@@ -31,8 +31,9 @@
     "company": "Idego Group",
     "title": "Senior Full Stack Developer with AI",
     "url": "https://nofluffjobs.com/job/senior-full-stack-developer-with-ai-idego-group-holy-cross",
-    "status": "To Apply",
+    "status": "Applied",
     "date_found": "2026-07-05",
+    "date_applied": "2026-07-05",
     "match_score": 38,
     "apply_url": "https://nofluffjobs.com/job/senior-full-stack-developer-with-ai-idego-group-remote",
     "location": "Iran",
@@ -52,7 +53,7 @@
       "resume": "resume.pdf",
       "location": "Iran"
     },
-    "notes": "Package approved 2026-07-05. Ready to apply via No Fluff Jobs. Active until 2026-07-12."
+    "notes": "Applied 2026-07-05 via No Fluff Jobs. React/Next/Django/AI fit; honest on Django depth and English level."
   },
   {
     "company": "Copious",
@@ -76,10 +77,40 @@
     "company": "Vinta",
     "title": "Senior Fullstack Developer Python/React",
     "url": "https://remotive.com/remote/jobs/software-development/senior-fullstack-developer-python-react-4260791",
-    "status": "To Apply",
+    "status": "Rejected",
     "date_found": "2026-07-05",
     "match_score": 32,
-    "notes": "remote worldwide. Python/Django روی GitHub هست ولی career اصلی frontend است — fullstack senior stretch."
+    "notes": "Listing removed — Remotive 404; jobs.lever.co/vinta-software shows no open postings."
+  },
+  {
+    "company": "Acquisity",
+    "title": "Senior Full-Stack Engineer (Next.js / AI)",
+    "url": "https://remotive.com/remote/jobs/software-development/senior-full-stack-engineer-4528678",
+    "status": "To Apply",
+    "date_found": "2026-07-05",
+    "match_score": 58,
+    "apply_url": "https://apply.workable.com/acquisity/j/B5AF5B375A/",
+    "notes": "Worldwide remote. Stack: Next.js App Router, tRPC, TS, Postgres, Vercel AI SDK. Strong AI/agent fit; $140K–$180K. Short Workable application, no cover letter."
+  },
+  {
+    "company": "Experian",
+    "title": "Senior React Engineer",
+    "url": "https://remotive.com/remote/jobs/software-development/senior-react-engineer-4430120",
+    "status": "To Apply",
+    "date_found": "2026-07-05",
+    "match_score": 48,
+    "apply_url": "https://jobs.smartrecruiters.com/Experian/744000121887767-senior-react-engineer",
+    "notes": "Remotive: worldwide. SSR React, Next.js/Remix/TanStack Router, Node, AWS. SmartRecruiters lists Costa Rica — verify eligibility from Iran before applying."
+  },
+  {
+    "company": "Sigma Software",
+    "title": "Senior Frontend Engineer",
+    "url": "https://career.sigma.software/vacancy/senior-frontend-engineer/",
+    "status": "To Apply",
+    "date_found": "2026-07-05",
+    "match_score": 42,
+    "apply_url": "https://career.sigma.software/vacancy/senior-frontend-engineer/",
+    "notes": "Overview says worldwide remote; page also tags Latin America. FinTech client, React/Next.js/TS, API integration. English Advanced required."
   },
   {
     "company": "Sequent Tech",

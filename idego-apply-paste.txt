@@ -1,0 +1,41 @@
+IDEO GROUP — COPY/PASTE CHEAT SHEET
+Apply: https://nofluffjobs.com/job/senior-full-stack-developer-with-ai-idego-group-remote
+Resume: upload resume.pdf yourself | Submit: you click Send
+
+--- CONTACT ---
+Mohammad Garmabi
+garmabi.mohammad73@gmail.com
++989192727266
+Iran
+https://www.linkedin.com/in/mohammad-garmabi/
+https://github.com/mohamadgarmabi
+
+--- SALARY ---
+140 – 170 PLN/h + VAT (B2B), aligned with your posted range (~23,500–28,500 PLN/month)
+
+--- ENGLISH ---
+Professional working proficiency — daily English in remote engineering teams, code reviews, and client-facing collaboration. Comfortable in technical discussions and written async communication.
+
+--- AI TOOLS ---
+Yes — Cursor, GitHub Copilot, and ChatGPT are part of my daily workflow, including building automation tooling and AI-assisted development.
+
+--- AVAILABILITY ---
+Available for start around Q3 2026 as listed; flexible on exact date.
+
+--- COVER LETTER / MESSAGE ---
+Dear Idego Group Hiring Team,
+
+I am applying for the Senior Full Stack Developer with AI role on your maritime operations platform.
+
+Why this project: migrating a legacy monolith into a modern React + Django architecture while shipping AI-powered document extraction is exactly the kind of work I enjoy — high ownership, visible impact, and a stack I use in practice every day on the frontend and in personal fullstack projects.
+
+I bring 6+ years of commercial experience with React and TypeScript, including Next.js, monorepo architecture (Nx), and performance work that cut load times by roughly 25% and achieved Lighthouse scores of 100. I have integrated payment systems and third-party APIs, mentored developers, and led code-quality standards across teams. I use AI tools daily — Cursor, Copilot, and custom automation — both in how I build software and in products I ship.
+
+On the Python/Django side, my professional depth is strongest on the frontend, but I actively build backend systems in Django/DRF (see my open-source projects on GitHub). I am confident contributing to API design, migrations, and AI-powered document pipelines, and I ramp quickly on backend depth where the team needs it.
+
+I work fully remote from Iran, communicate clearly in English with international teams, and would welcome contributing to invoice, fleet, and document-processing modules on a long-term engagement.
+
+Thank you for your consideration.
+
+Best regards,
+Mohammad Garmabi
