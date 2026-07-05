@@ -1,5 +1,114 @@
 [
   {
+    "company": "Apify",
+    "title": "Senior Fullstack Engineer in Creators group (React/TypeScript)",
+    "url": "https://reactjobs.io/react-jobs/apify-technologies-sro/8751-senior-fullstack-engineer-in-creators-group-reacttypescript",
+    "status": "Applied",
+    "date_found": "2026-07-05",
+    "date_applied": "2026-07-05",
+    "match_score": 36,
+    "apply_url": "https://apify.com/jobs",
+    "location": "Iran",
+    "cover_letter_draft": "Dear Apify Hiring Team,\n\nI am applying for the Senior Fullstack Engineer role on the Creators group.\n\nWhy Apify: I build developer-facing products and automation tooling myself (including a local job-discovery agent), so Apify's Creators ecosystem — helping builders publish, monetize, and scale Actors — feels like the kind of product I would use and want to improve. The DX team's focus on CLI flows, templating, and agentic coding is exactly where my experience with React/TypeScript architecture and AI-assisted development converges.\n\nOver six years, I have led frontend architecture at scale: migrating products to Nx monorepos, designing micro-frontend systems, and shipping React/Next.js/TypeScript applications with measurable impact — including roughly 25% load-time improvements and Lighthouse scores of 100 on key surfaces. I have integrated payment systems and third-party APIs in production, mentored developers, and established testing and code-quality standards across teams.\n\nI would welcome contributing to creator-facing tooling at Apify — especially flows that help builders ship faster with React, TypeScript, and Node.js. I am comfortable working fully remote from Iran, collaborating asynchronously, and going deep on your stack where needed.\n\nThank you for your consideration. I look forward to discussing how I can help the Creators group.\n\nBest regards,\nMohammad Garmabi",
+    "application_answers": {
+      "why_interested": "I use AI-assisted development daily and have built automation tooling myself. Apify's Creators group — helping developers publish and monetize Actors — is the kind of developer-platform work I want to do next. My 6+ years with React/Next.js/TypeScript and API integrations map directly to creator-facing product engineering.",
+      "salary_expectation": "€58,000 – €72,000 gross annual (B2B / contractor equivalent, flexible and open to discussion based on Apify's framework and total package including equity/profit share)",
+      "office_visits_prague_brno": "No — fully remote from Iran; not available for regular office visits.",
+      "english_level": "Professional working proficiency — daily use in remote engineering teams and client collaboration."
+    },
+    "autofill": {
+      "name": "Mohammad Garmabi",
+      "email": "garmabi.mohammad73@gmail.com",
+      "phone": "+989192727266",
+      "linkedin": "https://www.linkedin.com/in/mohammad-garmabi/",
+      "github": "https://github.com/mohamadgarmabi",
+      "resume": "resume.pdf",
+      "location": "Iran"
+    },
+    "notes": "Applied 2026-07-05 via apify.com/jobs. Cover letter highlighted Creators/DX fit, AI tooling, React/Next.js architecture, and remote-from-Iran."
+  },
+  {
+    "company": "Idego Group",
+    "title": "Senior Full Stack Developer with AI",
+    "url": "https://nofluffjobs.com/job/senior-full-stack-developer-with-ai-idego-group-holy-cross",
+    "status": "To Apply",
+    "date_found": "2026-07-05",
+    "match_score": 38,
+    "apply_url": "https://nofluffjobs.com/job/senior-full-stack-developer-with-ai-idego-group-remote",
+    "location": "Iran",
+    "cover_letter_draft": "Dear Idego Group Hiring Team,\n\nI am applying for the Senior Full Stack Developer with AI role on your maritime operations platform.\n\nWhy this project: migrating a legacy monolith into a modern React + Django architecture while shipping AI-powered document extraction is exactly the kind of work I enjoy — high ownership, visible impact, and a stack I use in practice every day on the frontend and in personal fullstack projects.\n\nI bring 6+ years of commercial experience with React and TypeScript, including Next.js, monorepo architecture (Nx), and performance work that cut load times by roughly 25% and achieved Lighthouse scores of 100. I have integrated payment systems and third-party APIs, mentored developers, and led code-quality standards across teams. I use AI tools daily — Cursor, Copilot, and custom automation — both in how I build software and in products I ship.\n\nOn the Python/Django side, my professional depth is strongest on the frontend, but I actively build backend systems in Django/DRF (see my open-source projects on GitHub). I am confident contributing to API design, migrations, and AI-powered document pipelines, and I ramp quickly on backend depth where the team needs it.\n\nI work fully remote from Iran, communicate clearly in English with international teams, and would welcome contributing to invoice, fleet, and document-processing modules on a long-term engagement.\n\nThank you for your consideration.\n\nBest regards,\nMohammad Garmabi",
+    "application_answers": {
+      "salary_expectation": "140 – 170 PLN/h + VAT (B2B), aligned with your posted range (~23,500–28,500 PLN/month)",
+      "english_level": "Professional working proficiency — daily English in remote engineering teams, code reviews, and client-facing collaboration. Comfortable in technical discussions and written async communication.",
+      "ai_tools_daily": "Yes — Cursor, GitHub Copilot, and ChatGPT are part of my daily workflow, including building automation tooling and AI-assisted development.",
+      "availability_start": "Available for start around Q3 2026 as listed; flexible on exact date."
+    },
+    "autofill": {
+      "name": "Mohammad Garmabi",
+      "email": "garmabi.mohammad73@gmail.com",
+      "phone": "+989192727266",
+      "linkedin": "https://www.linkedin.com/in/mohammad-garmabi/",
+      "github": "https://github.com/mohamadgarmabi",
+      "resume": "resume.pdf",
+      "location": "Iran"
+    },
+    "notes": "Package approved 2026-07-05. Ready to apply via No Fluff Jobs. Active until 2026-07-12."
+  },
+  {
+    "company": "Copious",
+    "title": "Solution Development Engineer (Full Stack - React)",
+    "url": "https://remotive.com/remote-jobs/software-development/solution-development-engineer-full-stack-react-4135160",
+    "status": "Rejected",
+    "date_found": "2026-07-05",
+    "match_score": 62,
+    "notes": "Listing removed — copious.freshteam.com not accepting applications."
+  },
+  {
+    "company": "Huzzle",
+    "title": "Senior Fullstack Engineer (TypeScript / Next.js / Supabase)",
+    "url": "https://remotive.com/remote-jobs/software-development/senior-fullstack-engineer-typescript-next-js-supabase-4436752",
+    "status": "Rejected",
+    "date_found": "2026-07-05",
+    "match_score": 48,
+    "notes": "Listing removed from Remotive."
+  },
+  {
+    "company": "Vinta",
+    "title": "Senior Fullstack Developer Python/React",
+    "url": "https://remotive.com/remote/jobs/software-development/senior-fullstack-developer-python-react-4260791",
+    "status": "To Apply",
+    "date_found": "2026-07-05",
+    "match_score": 32,
+    "notes": "remote worldwide. Python/Django روی GitHub هست ولی career اصلی frontend است — fullstack senior stretch."
+  },
+  {
+    "company": "Sequent Tech",
+    "title": "Senior Fullstack Engineer",
+    "url": "https://sequentech.io/senior-fullstack-engineer/",
+    "status": "To Apply",
+    "date_found": "2026-07-05",
+    "match_score": 22,
+    "notes": "Rust-heavy — gap بزرگ. React/TS خوب ولی 5+yr با Rust الزامی."
+  },
+  {
+    "company": "SerpApi",
+    "title": "Senior Fullstack Engineer",
+    "url": "https://serpapi.com/careers/senior-fullstack-engineer",
+    "status": "To Apply",
+    "date_found": "2026-07-05",
+    "match_score": 18,
+    "notes": "stack اصلی Ruby/Rails — mismatch. remote worldwide خوب."
+  },
+  {
+    "company": "Polcode",
+    "title": "Frontend Developer (Next.js & Composable Commerce)",
+    "url": "https://nofluffjobs.com/job/frontend-developer-next-js-composable-commerce-modern-content-platform-polcode-remote",
+    "status": "To Apply",
+    "date_found": "2026-07-05",
+    "match_score": 8,
+    "notes": "Polish fluent الزامی — disqualifier. stack خوب ولی زبان block است."
+  },
+  {
     "company": "Files.com",
     "title": "Front End Engineer (Remote)",
     "url": "https://www.linkedin.com/jobs/view/front-end-engineer-remote-at-files-com-4230117565",
@@ -54,29 +163,5 @@
     "status": "Rejected",
     "date_found": "2026-07-05",
     "notes": "No longer accepting applications."
-  },
-  {
-    "company": "Polcode",
-    "title": "Frontend Developer (Next.js & Composable Commerce)",
-    "url": "https://nofluffjobs.com/job/frontend-developer-next-js-composable-commerce-modern-content-platform-polcode-remote",
-    "status": "To Apply",
-    "date_found": "2026-07-05",
-    "notes": "Active until 2026-07-19. Requires fluent Polish + English B2."
-  },
-  {
-    "company": "Apify",
-    "title": "Senior Fullstack Engineer in Creators group (React/TypeScript)",
-    "url": "https://reactjobs.io/react-jobs/apify-technologies-sro/8751-senior-fullstack-engineer-in-creators-group-reacttypescript",
-    "status": "To Apply",
-    "date_found": "2026-07-05",
-    "notes": "NEW on apify.com/careers. Full remote (Czechia). React, Next.js, Node.js, TypeScript. Posted ~1 week ago."
-  },
-  {
-    "company": "Sequent Tech",
-    "title": "Senior Fullstack Engineer",
-    "url": "https://sequentech.io/senior-fullstack-engineer/",
-    "status": "To Apply",
-    "date_found": "2026-07-05",
-    "notes": "REMOTE global. React + TypeScript + GraphQL. Apply via team@sequentech.io. Rust-heavy stack."
   }
 ]
