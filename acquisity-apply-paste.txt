@@ -1,0 +1,40 @@
+ACQUISITY — COPY/PASTE CHEAT SHEET
+Apply: https://apply.workable.com/acquisity/j/B5AF5B375A/
+Resume: upload resume.pdf yourself | Submit: you click Apply
+
+--- CONTACT ---
+Mohammad Garmabi
+garmabi.mohammad73@gmail.com
++989192727266
+Iran
+https://www.linkedin.com/in/mohammad-garmabi/
+https://github.com/mohamadgarmabi
+
+--- SALARY ---
+$140,000 – $180,000 USD annually, flexible within your posted range for B2B/contractor engagement
+
+--- LOCATION ---
+Iran — fully remote
+
+--- LLM / AI EXPERIENCE ---
+Yes — Cursor, Copilot, and ChatGPT daily; built personal automation/agent tooling (job-discovery workflow). Production depth is in AI-assisted development and integrations; eager to go deeper on multi-agent architecture with your team.
+
+--- AI CODING TOOLS ---
+Cursor, GitHub Copilot, ChatGPT — daily workflow
+
+--- ENGLISH ---
+Professional working proficiency — daily use in remote engineering teams
+
+--- OPTIONAL MESSAGE (if form has a text field) ---
+Dear Acquisity Hiring Team,
+
+I am applying for the Senior Full-Stack Engineer (Next.js / AI) role.
+
+Your stack and culture match how I already work: Next.js App Router, TypeScript, Postgres, shipping fast with small PRs, and using Cursor daily to build real products — including automation tooling I built myself. I bring 6+ years shipping React/Next.js applications with measurable performance gains, API integrations, and full-stack feature ownership from design through production.
+
+I would welcome owning greenfield agent and dashboard work on your platform — especially LLM-powered flows where product impact is visible within days. I work fully remote from Iran and collaborate clearly in English with distributed teams.
+
+Thank you for your consideration.
+
+Best regards,
+Mohammad Garmabi
