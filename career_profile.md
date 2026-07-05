@@ -10,8 +10,6 @@ Mohammad Garmabi
 - React Engineer
 - Senior Front
 - Software engineer
-- Django
-- Python
 
 ## experience_summary
 

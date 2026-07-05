@@ -6,18 +6,18 @@
 - Next.js
 - Node.js
 - TypeScript
-- Python
 - Remix
 - Solid
 
 ## work_type
 
-Remote / Hybrid / Relocate
+Remote / Hybrid / Relocate (visa sponsorship or relocation package required)
 
 ## red_lines
 
-- No full-time on-site roles
+- No full-time on-site roles (hybrid with relocation is OK)
 - No legacy tech (PHP)
+- Remote-only roles with no relocation or visa path
 
 ## search_keywords
 
@@ -26,4 +26,7 @@ Remote / Hybrid / Relocate
 - frontend
 - react developer
 - software
-- backend
+- visa sponsorship
+- relocation
+- relocate
+- relocation package

@@ -112,51 +112,84 @@
     "notes": "Applied 2026-07-05 via Workable. Next.js/AI fit, Cursor daily workflow, full-stack ownership, remote from Iran. $140K–$180K USD range."
   },
   {
+    "company": "DualEntry",
+    "title": "Senior/Staff Frontend Engineer (Remote)",
+    "url": "https://www.dualentry.com/open-roles/frontend-engineer-senior-staff",
+    "status": "To Apply",
+    "date_found": "2026-07-05",
+    "match_score": 55,
+    "apply_url": "https://www.dualentry.com/open-roles/frontend-engineer-senior-staff",
+    "relocate": "Visa sponsorship for relocation to NYC within 2+ years",
+    "notes": "React/Next.js, $130K–$220K B2B. Remote EMEA/EU/LATAM now → path to US relocate. EST overlap required."
+  },
+  {
+    "company": "Factor Eleven",
+    "title": "Senior Frontend Engineer - React.JS (Europe)",
+    "url": "https://www.arbeitnow.com/jobs/companies/factor-eleven/remote-senior-frontend-engineer-reactjs-europe-germany-379700",
+    "status": "To Apply",
+    "date_found": "2026-07-05",
+    "match_score": 46,
+    "apply_url": "https://www.arbeitnow.com/jobs/companies/factor-eleven/remote-senior-frontend-engineer-reactjs-europe-germany-379700/apply",
+    "relocate": "Relocation and visa support (case-by-case); remote within Europe after move",
+    "notes": "React/TS/GraphQL/Jest/Cypress. Ad-tech SaaS. Visa sponsorship listed on Arbeitnow."
+  },
+  {
+    "company": "ABOUT YOU",
+    "title": "Senior Frontend Engineer - Storefront (Hamburg/Berlin)",
+    "url": "https://www.arbeitnow.com/jobs/companies/about-you-se-co-kg/senior-frontend-engineer-all-genders-storefront-hamburg-or-berlin-308349",
+    "status": "To Apply",
+    "date_found": "2026-07-05",
+    "match_score": 40,
+    "apply_url": "https://www.arbeitnow.com/jobs/companies/about-you-se-co-kg/senior-frontend-engineer-all-genders-storefront-hamburg-or-berlin-308349/apply",
+    "relocate": "Help in relocation and VISA process",
+    "notes": "Hybrid 2–3 days/week Hamburg or Berlin. Stack Vue/TS (React experience accepted). High-traffic e-commerce."
+  },
+  {
     "company": "Experian",
     "title": "Senior React Engineer",
     "url": "https://remotive.com/remote/jobs/software-development/senior-react-engineer-4430120",
-    "status": "To Apply",
+    "status": "Rejected",
     "date_found": "2026-07-05",
     "match_score": 48,
     "apply_url": "https://jobs.smartrecruiters.com/Experian/744000121887767-senior-react-engineer",
-    "notes": "Remotive: worldwide. SSR React, Next.js/Remix/TanStack Router, Node, AWS. SmartRecruiters lists Costa Rica — verify eligibility from Iran before applying."
+    "notes": "No relocate/visa path — Costa Rica Home role; skipped per relocate-only search."
   },
   {
     "company": "Sigma Software",
     "title": "Senior Frontend Engineer",
     "url": "https://career.sigma.software/vacancy/senior-frontend-engineer/",
-    "status": "To Apply",
+    "status": "Rejected",
     "date_found": "2026-07-05",
     "match_score": 42,
     "apply_url": "https://career.sigma.software/vacancy/senior-frontend-engineer/",
-    "notes": "Overview says worldwide remote; page also tags Latin America. FinTech client, React/Next.js/TS, API integration. English Advanced required."
+    "notes": "No relocate/visa mentioned — remote-only; skipped per relocate-only search."
   },
   {
     "company": "Sequent Tech",
     "title": "Senior Fullstack Engineer",
     "url": "https://sequentech.io/senior-fullstack-engineer/",
-    "status": "To Apply",
+    "status": "Rejected",
     "date_found": "2026-07-05",
     "match_score": 22,
-    "notes": "Rust-heavy — gap بزرگ. React/TS خوب ولی 5+yr با Rust الزامی."
+    "notes": "No relocate/visa — Rust-heavy gap; skipped per relocate-only search."
   },
   {
     "company": "SerpApi",
     "title": "Senior Fullstack Engineer",
     "url": "https://serpapi.com/careers/senior-fullstack-engineer",
-    "status": "To Apply",
+    "status": "Rejected",
     "date_found": "2026-07-05",
     "match_score": 18,
-    "notes": "stack اصلی Ruby/Rails — mismatch. remote worldwide خوب."
+    "notes": "No relocate/visa — Ruby/Rails stack mismatch; skipped per relocate-only search."
   },
   {
     "company": "Polcode",
     "title": "Frontend Developer (Next.js & Composable Commerce)",
     "url": "https://nofluffjobs.com/job/frontend-developer-next-js-composable-commerce-modern-content-platform-polcode-remote",
-    "status": "To Apply",
+    "status": "Rejected",
     "date_found": "2026-07-05",
     "match_score": 8,
-    "notes": "Polish fluent الزامی — disqualifier. stack خوب ولی زبان block است."
+    "notes": "Polish fluent required + no relocate path."
   },
   {
     "company": "Files.com",
