@@ -1,0 +1,43 @@
+DUALENTRY — COPY/PASTE CHEAT SHEET
+Apply: https://www.dualentry.com/open-roles/frontend-engineer-senior-staff
+Resume: upload resume.pdf yourself | Submit: you click Apply
+
+--- CONTACT ---
+Mohammad Garmabi
+garmabi.mohammad73@gmail.com
++989192727266
+Iran
+https://www.linkedin.com/in/mohammad-garmabi/
+https://github.com/mohamadgarmabi
+
+--- LOCATION ---
+Iran (remote); open to future relocation to NYC via visa sponsorship
+
+--- SALARY ---
+$150,000 – $190,000 USD annually (B2B), flexible within $130K–$220K + equity
+
+--- EST OVERLAP ---
+Yes — I can maintain consistent overlap with US Eastern business hours
+
+--- VISA / RELOCATE ---
+Yes — interested in visa sponsorship for NYC within 2+ years
+
+--- WHY DUALENTRY ---
+Rare chance to rebuild ERP with AI from zero at startup speed. I want ownership on React/Next.js UI with a clear long-term path to US relocation.
+
+--- ENGLISH ---
+C1+ professional — daily use in remote teams, code reviews, async writing
+
+--- COVER LETTER / MESSAGE ---
+Dear DualEntry Hiring Team,
+
+I am applying for the Senior/Staff Frontend Engineer role.
+
+DualEntry's mission — building an AI-native ERP from scratch in a market that hasn't seen real innovation in decades — is exactly the kind of high-ownership frontend work I want. I bring 6+ years shipping React and Next.js applications with measurable performance gains, production API integrations (including payment systems), and a pragmatic ship-fast mindset. I care deeply about polished, accessible UI for complex workflows.
+
+I would welcome owning major product surfaces in React + Next.js, helping define your component architecture, and growing with a small team that deploys daily. I am based in Iran today, work fully remote with international teams, maintain consistent overlap with US Eastern hours, and am genuinely interested in DualEntry's visa sponsorship path to NYC in the longer term.
+
+Thank you for your consideration.
+
+Best regards,
+Mohammad Garmabi

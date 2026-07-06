@@ -1,11 +1,11 @@
 ---
 name: job-applier
-description: Tailor cover letters, autofill application forms, upload resume, pause for human approval on CAPTCHA or complex questions, and update job status to Applied. Use when applying to jobs, drafting cover letters, or processing entries with status "To Apply" in job_applications.json.
+description: Tailor cover letters, open application forms in browser, autofill all fields, upload resume, pause for human review — never auto-submit. Use when applying to jobs, drafting cover letters, or processing entries with status "To Apply" in job_applications.json.
 ---
 
 # Job Applier
 
-Automate job applications with personalization and mandatory human checkpoints.
+Automate job application prep with browser autofill. **Fill everything, never submit.**
 
 ## Data Files
 
@@ -15,84 +15,97 @@ Automate job applications with personalization and mandatory human checkpoints.
 | `career_profile.md` | Experience, values, target roles |
 | `resume.pdf` | Final resume — send as-is, never modify |
 | `job_preferences.md` | Optional context for tone/fit |
+| `scripts/fill_application.py` | Browser autofill runner (Playwright) |
 
-## Workflow
+## Default Mode: Fill Only (No Submit)
 
-Copy and track progress:
+The agent **must open the apply URL and autofill the form**, then **stop before submit**. The user reviews in the browser and clicks Submit themselves.
 
 ```
 Task Progress:
 - [ ] Pick job with status "To Apply"
-- [ ] Analyze JD vs career_profile.md
-- [ ] Draft personalized cover letter
-- [ ] Open application form
-- [ ] Autofill basic fields
-- [ ] Upload resume.pdf
-- [ ] Pause if CAPTCHA or complex questions
-- [ ] Submit after user approval
-- [ ] Update status to Applied
+- [ ] Ensure autofill package exists (cover_letter_draft, application_answers, autofill)
+- [ ] Run browser autofill script
+- [ ] Pause for user review (CAPTCHA, attestations, final check)
+- [ ] User submits manually
+- [ ] Update status to Applied only after user confirms submission
 ```
+
+### Browser Autofill (required)
+
+From project root, run:
+
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+python -m playwright install chromium   # or uses system Chrome as fallback
+python scripts/fill_application.py              # next ready "To Apply" job
+python scripts/fill_application.py -c DualEntry   # specific company
+python scripts/fill_application.py -c DualEntry --detach  # keep browser open, no terminal wait
+```
+
+Behavior:
+
+1. Opens `apply_url` in a **visible** Chromium window
+2. Clicks "Apply" if needed
+3. Fills name, email, phone, LinkedIn, GitHub, location, cover letter, salary, and `application_answers`
+4. Uploads `resume.pdf` when a file input is found
+5. **Blocks submit-button clicks** as a safety net
+6. Leaves browser open until user presses Enter in terminal
+
+If Playwright is unavailable, fall back to `open "<apply_url>"` plus a paste cheat sheet — still **never submit**.
 
 ### Step 1: Select Job
 
-From `job_applications.json`, pick the next entry where `status` is `"To Apply"`. Confirm with the user before proceeding.
+From `job_applications.json`, pick the next entry where `status` is `"To Apply"`. Prefer jobs with a complete autofill package (`autofill`, `cover_letter_draft`, `application_answers`).
 
-### Step 2: Analyze Fit
+### Step 2: Prepare Package (if missing)
 
-Read the job description (from `url` or user-provided text). Compare against `career_profile.md`:
+Read the job description (from `url` or user-provided text). Compare against `career_profile.md`. Draft cover letter and answers; save to the job entry before running autofill.
 
-- `target_roles` — role alignment
-- `experience_summary` — bullets to highlight
-- `core_values` — tone and emphasis
-
-Note 3–5 strongest matches and any gaps to address honestly (not invent experience).
-
-### Step 3: Draft Cover Letter
-
-Structure:
+Cover letter structure:
 
 1. Opening — role + company, one sentence on fit
 2. Body — 2 paragraphs mapping `experience_summary` to JD requirements
 3. Closing — enthusiasm, availability, sign-off with name from profile
 
-Save draft in the job entry's `notes` field before submission. Show the user the full letter for approval.
+### Step 3: Autofill Fields
 
-### Step 4: Autofill Basic Fields
-
-Map from `career_profile.md` and user-provided contact info:
+Map from job entry and `career_profile.md`:
 
 | Field | Source |
 |-------|--------|
-| Full name | `name` in career_profile |
-| Email | user config / ask if missing |
-| Phone | user config / ask if missing |
-| LinkedIn / GitHub / Portfolio | user config / ask if missing |
+| Full name | `autofill.name` or `name` in career_profile |
+| Email | `autofill.email` |
+| Phone | `autofill.phone` |
+| LinkedIn / GitHub | `autofill.linkedin`, `autofill.github` |
+| Cover letter | `cover_letter_draft` |
+| Custom questions | `application_answers` |
 
 Never guess missing PII. Ask the user.
 
-### Step 5: Upload Resume
+### Step 4: Upload Resume
 
-Attach `resume.pdf` exactly as stored. Do not edit, regenerate, or substitute another file unless the user explicitly provides one.
+Attach `resume.pdf` exactly as stored. Do not edit, regenerate, or substitute unless the user explicitly provides one.
 
-### Step 6: Human-in-the-Loop Pauses
+### Step 5: Human Review (mandatory before submit)
 
-**Stop and ask the user** when encountering:
+**Stop and tell the user** to review in the browser when:
 
-- CAPTCHA or bot verification
-- Multi-step identity verification
-- Open-ended questions requiring personal judgment (e.g. "Why this company?", salary expectations, visa status)
-- Legal attestations the user must confirm
-- Any step that could submit without explicit approval
+- CAPTCHA or bot verification appears
+- Multi-step identity verification is required
+- Legal attestations need confirmation
+- Any field looks wrong or empty
 
-Present options clearly. Do not auto-submit past these gates.
+Present: company, role, URL, what was filled, what may need manual fix.
 
-### Step 7: Submit
+### Step 6: Submit — User Only
 
-Only submit after explicit user approval ("submit", "looks good", etc.).
+**Never auto-submit.** Only update status after the user explicitly confirms they submitted ("submitted", "done", etc.).
 
-### Step 8: Update Status
+### Step 7: Update Status
 
-After successful submission, update the entry in `job_applications.json`:
+After user confirms submission:
 
 ```json
 {
@@ -108,7 +121,7 @@ Preserve existing fields (`company`, `title`, `url`, `date_found`).
 
 1. Never fabricate work history, skills, or credentials
 2. Never bypass CAPTCHA or ToS restrictions
-3. Never submit without user approval
+3. **Never submit without explicit user action in the browser**
 4. Never modify `resume.pdf`
 5. One application at a time unless user requests batch mode
 
@@ -116,7 +129,8 @@ Preserve existing fields (`company`, `title`, `url`, `date_found`).
 
 Report to the user:
 
-- Company and role applied to
-- Cover letter summary (or full text if short)
-- New status and `date_applied`
+- Company and role
+- Apply URL opened
+- Fields filled / resume uploaded / gaps needing manual input
+- Reminder: review in browser, submit yourself, then confirm so status can update
 - Any jobs still in `To Apply` queue

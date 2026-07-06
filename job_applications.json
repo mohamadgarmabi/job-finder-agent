@@ -6,7 +6,7 @@
     "status": "Applied",
     "date_found": "2026-07-05",
     "date_applied": "2026-07-05",
-    "match_score": 36,
+    "match_score": 64,
     "apply_url": "https://apify.com/jobs",
     "location": "Iran",
     "cover_letter_draft": "Dear Apify Hiring Team,\n\nI am applying for the Senior Fullstack Engineer role on the Creators group.\n\nWhy Apify: I build developer-facing products and automation tooling myself (including a local job-discovery agent), so Apify's Creators ecosystem — helping builders publish, monetize, and scale Actors — feels like the kind of product I would use and want to improve. The DX team's focus on CLI flows, templating, and agentic coding is exactly where my experience with React/TypeScript architecture and AI-assisted development converges.\n\nOver six years, I have led frontend architecture at scale: migrating products to Nx monorepos, designing micro-frontend systems, and shipping React/Next.js/TypeScript applications with measurable impact — including roughly 25% load-time improvements and Lighthouse scores of 100 on key surfaces. I have integrated payment systems and third-party APIs in production, mentored developers, and established testing and code-quality standards across teams.\n\nI would welcome contributing to creator-facing tooling at Apify — especially flows that help builders ship faster with React, TypeScript, and Node.js. I am comfortable working fully remote from Iran, collaborating asynchronously, and going deep on your stack where needed.\n\nThank you for your consideration. I look forward to discussing how I can help the Creators group.\n\nBest regards,\nMohammad Garmabi",
@@ -25,7 +25,20 @@
       "resume": "resume.pdf",
       "location": "Iran"
     },
-    "notes": "Applied 2026-07-05 via apify.com/jobs. Cover letter highlighted Creators/DX fit, AI tooling, React/Next.js architecture, and remote-from-Iran."
+    "notes": "Applied 2026-07-05 via apify.com/jobs. Cover letter highlighted Creators/DX fit, AI tooling, React/Next.js architecture, and remote-from-Iran.",
+    "match_breakdown": {
+      "primary": [
+        "react",
+        "next.js",
+        "typescript"
+      ],
+      "secondary": [
+        "fullstack"
+      ],
+      "role_match": [
+        "fullstack engineer"
+      ]
+    }
   },
   {
     "company": "Idego Group",
@@ -53,7 +66,17 @@
       "resume": "resume.pdf",
       "location": "Iran"
     },
-    "notes": "Applied 2026-07-05 via No Fluff Jobs. React/Next/Django/AI fit; honest on Django depth and English level."
+    "notes": "Applied 2026-07-05 via No Fluff Jobs. React/Next/Django/AI fit; honest on Django depth and English level.",
+    "match_breakdown": {
+      "primary": [
+        "react"
+      ],
+      "secondary": [
+        "django",
+        "full stack"
+      ],
+      "role_match": []
+    }
   },
   {
     "company": "Copious",
@@ -61,8 +84,17 @@
     "url": "https://remotive.com/remote-jobs/software-development/solution-development-engineer-full-stack-react-4135160",
     "status": "Rejected",
     "date_found": "2026-07-05",
-    "match_score": 62,
-    "notes": "Listing removed — copious.freshteam.com not accepting applications."
+    "match_score": 23,
+    "notes": "Listing removed — copious.freshteam.com not accepting applications.",
+    "match_breakdown": {
+      "primary": [
+        "react"
+      ],
+      "secondary": [
+        "full stack"
+      ],
+      "role_match": []
+    }
   },
   {
     "company": "Huzzle",
@@ -70,8 +102,20 @@
     "url": "https://remotive.com/remote-jobs/software-development/senior-fullstack-engineer-typescript-next-js-supabase-4436752",
     "status": "Rejected",
     "date_found": "2026-07-05",
-    "match_score": 48,
-    "notes": "Listing removed from Remotive."
+    "match_score": 50,
+    "notes": "Listing removed from Remotive.",
+    "match_breakdown": {
+      "primary": [
+        "next.js",
+        "typescript"
+      ],
+      "secondary": [
+        "fullstack"
+      ],
+      "role_match": [
+        "fullstack engineer"
+      ]
+    }
   },
   {
     "company": "Vinta",
@@ -79,8 +123,18 @@
     "url": "https://remotive.com/remote/jobs/software-development/senior-fullstack-developer-python-react-4260791",
     "status": "Rejected",
     "date_found": "2026-07-05",
-    "match_score": 32,
-    "notes": "Listing removed — Remotive 404; jobs.lever.co/vinta-software shows no open postings."
+    "match_score": 38,
+    "notes": "Listing removed — Remotive 404; jobs.lever.co/vinta-software shows no open postings.",
+    "match_breakdown": {
+      "primary": [
+        "react"
+      ],
+      "secondary": [
+        "python",
+        "fullstack"
+      ],
+      "role_match": []
+    }
   },
   {
     "company": "Acquisity",
@@ -89,7 +143,7 @@
     "status": "Applied",
     "date_found": "2026-07-05",
     "date_applied": "2026-07-05",
-    "match_score": 58,
+    "match_score": 33,
     "apply_url": "https://apply.workable.com/acquisity/j/B5AF5B375A/",
     "location": "Iran",
     "cover_letter_draft": "Dear Acquisity Hiring Team,\n\nI am applying for the Senior Full-Stack Engineer (Next.js / AI) role.\n\nYour stack and culture match how I already work: Next.js App Router, TypeScript, Postgres, shipping fast with small PRs, and using Cursor daily to build real products — including automation tooling I built myself. I bring 6+ years shipping React/Next.js applications with measurable performance gains, API integrations, and full-stack feature ownership from design through production.\n\nI would welcome owning greenfield agent and dashboard work on your platform — especially LLM-powered flows where product impact is visible within days. I work fully remote from Iran and collaborate clearly in English with distributed teams.\n\nThank you for your consideration.\n\nBest regards,\nMohammad Garmabi",
@@ -109,40 +163,199 @@
       "resume": "resume.pdf",
       "location": "Iran"
     },
-    "notes": "Applied 2026-07-05 via Workable. Next.js/AI fit, Cursor daily workflow, full-stack ownership, remote from Iran. $140K–$180K USD range."
+    "notes": "Applied 2026-07-05 via Workable. Next.js/AI fit, Cursor daily workflow, full-stack ownership, remote from Iran. $140K–$180K USD range.",
+    "match_breakdown": {
+      "primary": [
+        "next.js"
+      ],
+      "secondary": [
+        "full-stack"
+      ],
+      "role_match": []
+    }
   },
   {
     "company": "DualEntry",
     "title": "Senior/Staff Frontend Engineer (Remote)",
     "url": "https://www.dualentry.com/open-roles/frontend-engineer-senior-staff",
-    "status": "To Apply",
+    "status": "Applied",
     "date_found": "2026-07-05",
-    "match_score": 55,
+    "match_score": 70,
     "apply_url": "https://www.dualentry.com/open-roles/frontend-engineer-senior-staff",
+    "location": "Iran",
     "relocate": "Visa sponsorship for relocation to NYC within 2+ years",
-    "notes": "React/Next.js, $130K–$220K B2B. Remote EMEA/EU/LATAM now → path to US relocate. EST overlap required."
+    "cover_letter_draft": "Dear DualEntry Hiring Team,\n\nI am applying for the Senior/Staff Frontend Engineer role.\n\nDualEntry's mission — building an AI-native ERP from scratch in a market that hasn't seen real innovation in decades — is exactly the kind of high-ownership frontend work I want. I bring 6+ years shipping React and Next.js applications with measurable performance gains, production API integrations (including payment systems), and a pragmatic ship-fast mindset. I care deeply about polished, accessible UI for complex workflows.\n\nI would welcome owning major product surfaces in React + Next.js, helping define your component architecture, and growing with a small team that deploys daily. I am based in Iran today, work fully remote with international teams, maintain consistent overlap with US Eastern hours, and am genuinely interested in DualEntry's visa sponsorship path to NYC in the longer term.\n\nThank you for your consideration.\n\nBest regards,\nMohammad Garmabi",
+    "application_answers": {
+      "location": "Iran (remote); open to future relocation to NYC via visa sponsorship",
+      "salary_expectation": "$150,000 – $190,000 USD annually (B2B), flexible within $130K–$220K + equity",
+      "est_overlap": "Yes — I can maintain consistent overlap with US Eastern business hours",
+      "why_dualentry": "Rare chance to rebuild ERP with AI from zero at startup speed. I want ownership on React/Next.js UI with a clear long-term path to US relocation.",
+      "visa_relocate_interest": "Yes — interested in visa sponsorship for NYC within 2+ years",
+      "english_level": "C1+ professional — daily use in remote teams, code reviews, async writing"
+    },
+    "autofill": {
+      "name": "Mohammad Garmabi",
+      "email": "garmabi.mohammad73@gmail.com",
+      "phone": "+989192727266",
+      "linkedin": "https://www.linkedin.com/in/mohammad-garmabi/",
+      "github": "https://github.com/mohamadgarmabi",
+      "resume": "resume.pdf",
+      "location": "Iran"
+    },
+    "notes": "Package approved 2026-07-05. React/Next.js, EST overlap, NYC visa path. Apply when ready. Applied 2026-07-05 via job-applier UI.",
+    "date_applied": "2026-07-05",
+    "match_breakdown": {
+      "primary": [
+        "react",
+        "next.js",
+        "frontend"
+      ],
+      "secondary": [],
+      "role_match": [
+        "frontend engineer",
+        "staff frontend"
+      ]
+    }
   },
   {
     "company": "Factor Eleven",
     "title": "Senior Frontend Engineer - React.JS (Europe)",
     "url": "https://www.arbeitnow.com/jobs/companies/factor-eleven/remote-senior-frontend-engineer-reactjs-europe-germany-379700",
-    "status": "To Apply",
+    "status": "Applied",
     "date_found": "2026-07-05",
-    "match_score": 46,
+    "match_score": 75,
     "apply_url": "https://www.arbeitnow.com/jobs/companies/factor-eleven/remote-senior-frontend-engineer-reactjs-europe-germany-379700/apply",
     "relocate": "Relocation and visa support (case-by-case); remote within Europe after move",
-    "notes": "React/TS/GraphQL/Jest/Cypress. Ad-tech SaaS. Visa sponsorship listed on Arbeitnow."
+    "notes": "React/TS/GraphQL/Jest/Cypress. Ad-tech SaaS. Visa sponsorship listed on Arbeitnow. Applied 2026-07-05 via job-applier UI.",
+    "date_applied": "2026-07-05",
+    "match_breakdown": {
+      "primary": [
+        "react",
+        "react.js",
+        "frontend"
+      ],
+      "secondary": [
+        "graphql"
+      ],
+      "role_match": [
+        "frontend engineer",
+        "senior frontend"
+      ]
+    }
   },
   {
     "company": "ABOUT YOU",
     "title": "Senior Frontend Engineer - Storefront (Hamburg/Berlin)",
     "url": "https://www.arbeitnow.com/jobs/companies/about-you-se-co-kg/senior-frontend-engineer-all-genders-storefront-hamburg-or-berlin-308349",
-    "status": "To Apply",
+    "status": "Applied",
     "date_found": "2026-07-05",
-    "match_score": 40,
+    "match_score": 60,
     "apply_url": "https://www.arbeitnow.com/jobs/companies/about-you-se-co-kg/senior-frontend-engineer-all-genders-storefront-hamburg-or-berlin-308349/apply",
     "relocate": "Help in relocation and VISA process",
-    "notes": "Hybrid 2–3 days/week Hamburg or Berlin. Stack Vue/TS (React experience accepted). High-traffic e-commerce."
+    "notes": "Hybrid 2–3 days/week Hamburg or Berlin. Stack Vue/TS (React experience accepted). High-traffic e-commerce. Applied 2026-07-05 via job-applier UI.",
+    "date_applied": "2026-07-05",
+    "match_breakdown": {
+      "primary": [
+        "react",
+        "frontend"
+      ],
+      "secondary": [],
+      "role_match": [
+        "frontend engineer",
+        "senior frontend"
+      ]
+    }
+  },
+  {
+    "company": "SumUp",
+    "title": "Senior Full-Stack Engineer - SuperApp",
+    "url": "https://www.sumup.com/careers/positions/berlin-germany/engineering/senior-fullstack-engineer-superapp/8529500002/",
+    "status": "Applied",
+    "date_found": "2026-07-05",
+    "date_applied": "2026-07-05",
+    "match_score": 48,
+    "apply_url": "https://www.sumup.com/careers/positions/berlin-germany/engineering/senior-fullstack-engineer-superapp/8529500002/",
+    "location": "Iran → willing to relocate Berlin",
+    "relocate": "Relocation assistance + Berlin office-first (visa support typical for SumUp international hires)",
+    "cover_letter_draft": "Dear SumUp Hiring Team,\n\nI am applying for the Senior Full-Stack Engineer - SuperApp role in Berlin.\n\nSumUp's mission — empowering millions of small businesses with simple financial tools — aligns with my experience building performant React dashboards and integrating payment systems and third-party APIs in production. I bring 6+ years with React and TypeScript, including Next.js, with measurable impact such as roughly 25% load-time improvements on modular frontends.\n\nI would welcome owning the web side of the SuperApp merchant experience — from first-time user flows to dashboard features — and contributing across the stack with REST APIs and Node.js where needed. I am motivated to relocate to Berlin and join an international, office-first team building products used by millions of merchants worldwide.\n\nThank you for your consideration.\n\nBest regards,\nMohammad Garmabi",
+    "application_answers": {
+      "location_relocate": "Currently Iran; willing to relocate to Berlin for office-first role",
+      "work_authorization": "Will require visa sponsorship — seeking relocation assistance",
+      "salary_expectation": "€95,000 – €115,000 gross per year (flexible based on level, VSOP, and full package including relocation support, €2k L&D, pension match, and benefits)",
+      "why_sumup": "Fintech at scale, merchant-facing product, strong relocate support, React/TS stack",
+      "english_level": "Professional working proficiency — daily in international remote teams"
+    },
+    "autofill": {
+      "name": "Mohammad Garmabi",
+      "email": "garmabi.mohammad73@gmail.com",
+      "phone": "+989192727266",
+      "linkedin": "https://www.linkedin.com/in/mohammad-garmabi/",
+      "github": "https://github.com/mohamadgarmabi",
+      "resume": "resume.pdf",
+      "location": "Iran"
+    },
+    "notes": "Applied 2026-07-05 via SumUp careers. Berlin relocate, React/TS SuperApp, €95K–€115K gross, visa sponsorship needed.",
+    "match_breakdown": {
+      "primary": [
+        "react"
+      ],
+      "secondary": [
+        "full-stack"
+      ],
+      "role_match": []
+    }
+  },
+  {
+    "company": "komodo consulting",
+    "title": "Senior Frontend Engineer (React.js and Next.js)",
+    "url": "https://jaabz.com/jobs/233702-senior-frontend-engineer-reactjs-and-nextjs",
+    "status": "Applied",
+    "date_found": "2026-07-05",
+    "match_score": 94,
+    "apply_url": "https://jaabz.com/jobs/233702-senior-frontend-engineer-reactjs-and-nextjs",
+    "relocate": "Visa sponsorship + relocation (Portugal); must be legally based in Portugal after move",
+    "notes": "React/Next SSR, Redux, Core Web Vitals. Remote in Portugal post-relocation. Applied 2026-07-05 via job-applier UI.",
+    "date_applied": "2026-07-05",
+    "match_breakdown": {
+      "primary": [
+        "react",
+        "react.js",
+        "next.js",
+        "frontend"
+      ],
+      "secondary": [
+        "redux",
+        "ssr"
+      ],
+      "role_match": [
+        "frontend engineer",
+        "senior frontend"
+      ]
+    }
+  },
+  {
+    "company": "bridge351",
+    "title": "FrontEnd Developer",
+    "url": "https://www.bridge351.com/jobs/frontend-developer",
+    "status": "Applied",
+    "date_found": "2026-07-05",
+    "match_score": 55,
+    "apply_url": "mailto:recruitment@bridge351.com",
+    "relocate": "Tech Visa company — visa help for non-EU candidates",
+    "notes": "React/Redux/TS, Portugal. Email apply to recruitment@bridge351.com. Listing older (2023) — verify still open. Applied 2026-07-05 via job-applier UI.",
+    "date_applied": "2026-07-05",
+    "match_breakdown": {
+      "primary": [
+        "react",
+        "frontend"
+      ],
+      "secondary": [
+        "redux"
+      ],
+      "role_match": [
+        "frontend developer"
+      ]
+    }
   },
   {
     "company": "Experian",
@@ -150,9 +363,18 @@
     "url": "https://remotive.com/remote/jobs/software-development/senior-react-engineer-4430120",
     "status": "Rejected",
     "date_found": "2026-07-05",
-    "match_score": 48,
+    "match_score": 50,
     "apply_url": "https://jobs.smartrecruiters.com/Experian/744000121887767-senior-react-engineer",
-    "notes": "No relocate/visa path — Costa Rica Home role; skipped per relocate-only search."
+    "notes": "No relocate/visa path — Costa Rica Home role; skipped per relocate-only search.",
+    "match_breakdown": {
+      "primary": [
+        "react"
+      ],
+      "secondary": [],
+      "role_match": [
+        "react engineer"
+      ]
+    }
   },
   {
     "company": "Sigma Software",
@@ -160,9 +382,19 @@
     "url": "https://career.sigma.software/vacancy/senior-frontend-engineer/",
     "status": "Rejected",
     "date_found": "2026-07-05",
-    "match_score": 42,
+    "match_score": 50,
     "apply_url": "https://career.sigma.software/vacancy/senior-frontend-engineer/",
-    "notes": "No relocate/visa mentioned — remote-only; skipped per relocate-only search."
+    "notes": "No relocate/visa mentioned — remote-only; skipped per relocate-only search.",
+    "match_breakdown": {
+      "primary": [
+        "frontend"
+      ],
+      "secondary": [],
+      "role_match": [
+        "frontend engineer",
+        "senior frontend"
+      ]
+    }
   },
   {
     "company": "Sequent Tech",
@@ -170,8 +402,17 @@
     "url": "https://sequentech.io/senior-fullstack-engineer/",
     "status": "Rejected",
     "date_found": "2026-07-05",
-    "match_score": 22,
-    "notes": "No relocate/visa — Rust-heavy gap; skipped per relocate-only search."
+    "match_score": 45,
+    "notes": "No relocate/visa — Rust-heavy gap; skipped per relocate-only search.",
+    "match_breakdown": {
+      "primary": [],
+      "secondary": [
+        "fullstack"
+      ],
+      "role_match": [
+        "fullstack engineer"
+      ]
+    }
   },
   {
     "company": "SerpApi",
@@ -179,8 +420,17 @@
     "url": "https://serpapi.com/careers/senior-fullstack-engineer",
     "status": "Rejected",
     "date_found": "2026-07-05",
-    "match_score": 18,
-    "notes": "No relocate/visa — Ruby/Rails stack mismatch; skipped per relocate-only search."
+    "match_score": 45,
+    "notes": "No relocate/visa — Ruby/Rails stack mismatch; skipped per relocate-only search.",
+    "match_breakdown": {
+      "primary": [],
+      "secondary": [
+        "fullstack"
+      ],
+      "role_match": [
+        "fullstack engineer"
+      ]
+    }
   },
   {
     "company": "Polcode",
@@ -188,8 +438,18 @@
     "url": "https://nofluffjobs.com/job/frontend-developer-next-js-composable-commerce-modern-content-platform-polcode-remote",
     "status": "Rejected",
     "date_found": "2026-07-05",
-    "match_score": 8,
-    "notes": "Polish fluent required + no relocate path."
+    "match_score": 50,
+    "notes": "Polish fluent required + no relocate path.",
+    "match_breakdown": {
+      "primary": [
+        "next.js",
+        "frontend"
+      ],
+      "secondary": [],
+      "role_match": [
+        "frontend developer"
+      ]
+    }
   },
   {
     "company": "Files.com",
@@ -197,7 +457,15 @@
     "url": "https://www.linkedin.com/jobs/view/front-end-engineer-remote-at-files-com-4230117565",
     "status": "Rejected",
     "date_found": "2026-07-05",
-    "notes": "Position removed (Jun 1, 2026)."
+    "notes": "Position removed (Jun 1, 2026).",
+    "match_score": 18,
+    "match_breakdown": {
+      "primary": [
+        "front end"
+      ],
+      "secondary": [],
+      "role_match": []
+    }
   },
   {
     "company": "Level",
@@ -205,7 +473,18 @@
     "url": "https://wfh.hstn.me/job/senior-frontend-engineer-77",
     "status": "Rejected",
     "date_found": "2026-07-05",
-    "notes": "Position filled — Tally form closed."
+    "notes": "Position filled — Tally form closed.",
+    "match_score": 35,
+    "match_breakdown": {
+      "primary": [
+        "frontend"
+      ],
+      "secondary": [],
+      "role_match": [
+        "frontend engineer",
+        "senior frontend"
+      ]
+    }
   },
   {
     "company": "Stack Builders",
@@ -213,7 +492,15 @@
     "url": "https://remotive.com/remote/jobs/software-development/experienced-react-next-developer-4364511",
     "status": "Rejected",
     "date_found": "2026-07-05",
-    "notes": "Listing likely expired."
+    "notes": "Listing likely expired.",
+    "match_score": 18,
+    "match_breakdown": {
+      "primary": [
+        "react"
+      ],
+      "secondary": [],
+      "role_match": []
+    }
   },
   {
     "company": "Jalasoft",
@@ -221,7 +508,20 @@
     "url": "https://reactjobs.io/react-jobs/jalasoft/8281-senior-frontend-developer-react-nextjs",
     "status": "Rejected",
     "date_found": "2026-07-05",
-    "notes": "Listing likely expired."
+    "notes": "Listing likely expired.",
+    "match_score": 55,
+    "match_breakdown": {
+      "primary": [
+        "react",
+        "next.js",
+        "frontend"
+      ],
+      "secondary": [],
+      "role_match": [
+        "frontend developer",
+        "senior frontend"
+      ]
+    }
   },
   {
     "company": "Mindera",
@@ -229,7 +529,20 @@
     "url": "https://reactjobs.io/react-jobs/mindera/8171-staff-frontend-software-engineer-react-or-nextjs",
     "status": "Rejected",
     "date_found": "2026-07-05",
-    "notes": "Listing likely expired; requires 10+ yrs."
+    "notes": "Listing likely expired; requires 10+ yrs.",
+    "match_score": 55,
+    "match_breakdown": {
+      "primary": [
+        "react",
+        "next.js",
+        "frontend"
+      ],
+      "secondary": [],
+      "role_match": [
+        "software engineer",
+        "staff frontend"
+      ]
+    }
   },
   {
     "company": "Capgemini",
@@ -237,7 +550,17 @@
     "url": "https://mx.linkedin.com/jobs/view/react-developer-remoto-en-m%C3%A9xico-at-capgemini-4240543406",
     "status": "Rejected",
     "date_found": "2026-07-05",
-    "notes": "LinkedIn listing returns 404."
+    "notes": "LinkedIn listing returns 404.",
+    "match_score": 25,
+    "match_breakdown": {
+      "primary": [
+        "react"
+      ],
+      "secondary": [],
+      "role_match": [
+        "react developer"
+      ]
+    }
   },
   {
     "company": "ReactSquad",
@@ -245,6 +568,86 @@
     "url": "https://gh.linkedin.com/jobs/view/react-developer-%40-reactsquad-9-8k-ghs-per-month-at-reactsquad-4373959467",
     "status": "Rejected",
     "date_found": "2026-07-05",
-    "notes": "No longer accepting applications."
+    "notes": "No longer accepting applications.",
+    "match_score": 25,
+    "match_breakdown": {
+      "primary": [
+        "react"
+      ],
+      "secondary": [],
+      "role_match": [
+        "react developer"
+      ]
+    }
+  },
+  {
+    "company": "Worldwide Placement Limited",
+    "title": "Full Stack Engineer",
+    "url": "https://www.arbeitnow.com/jobs/companies/worldwide-placement-limited/full-stack-engineer-munich-73489",
+    "apply_url": "https://www.arbeitnow.com/jobs/companies/worldwide-placement-limited/full-stack-engineer-munich-73489/apply",
+    "status": "Applied",
+    "date_found": "2026-07-05",
+    "match_score": 35,
+    "relocate": "relocation to",
+    "remote": false,
+    "notes": "Found via job-finder (arbeitnow). Tech: full stack. Applied 2026-07-05 via job-applier UI.",
+    "date_applied": "2026-07-05",
+    "match_breakdown": {
+      "primary": [],
+      "secondary": [
+        "full stack"
+      ],
+      "role_match": [
+        "full stack engineer"
+      ]
+    }
+  },
+  {
+    "company": "ABOUT YOU",
+    "title": "Senior Frontend Engineer (all genders) - Storefront",
+    "url": "https://de.linkedin.com/jobs/view/senior-frontend-engineer-all-genders-storefront-at-about-you-4414100065",
+    "apply_url": "https://de.linkedin.com/jobs/view/senior-frontend-engineer-all-genders-storefront-at-about-you-4414100065",
+    "status": "Applied",
+    "date_found": "2026-07-05",
+    "match_score": 50,
+    "relocate": "relocation and visa",
+    "remote": false,
+    "notes": "Found via job-finder (linkedin). Tech: frontend. Applied 2026-07-05 via job-applier UI.",
+    "country": "Germany",
+    "location": "Hamburg, Hamburg, Germany",
+    "match_breakdown": {
+      "primary": [
+        "frontend"
+      ],
+      "secondary": [],
+      "role_match": [
+        "frontend engineer",
+        "senior frontend"
+      ]
+    },
+    "date_applied": "2026-07-05"
+  },
+  {
+    "company": "Helsing",
+    "title": "Software Engineer - Frontend Autonomous Air System V&V",
+    "url": "https://de.linkedin.com/jobs/view/software-engineer-frontend-autonomous-air-system-v-v-at-helsing-4350226149",
+    "apply_url": "https://de.linkedin.com/jobs/view/software-engineer-frontend-autonomous-air-system-v-v-at-helsing-4350226149",
+    "status": "To Apply",
+    "date_found": "2026-07-05",
+    "match_score": 40,
+    "relocate": "relocation support",
+    "remote": false,
+    "notes": "Found via job-finder (linkedin). Tech: frontend.",
+    "country": "Germany",
+    "location": "Berlin, Berlin, Germany",
+    "match_breakdown": {
+      "primary": [
+        "frontend"
+      ],
+      "secondary": [],
+      "role_match": [
+        "software engineer"
+      ]
+    }
   }
 ]

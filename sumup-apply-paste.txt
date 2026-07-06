@@ -1,0 +1,40 @@
+SUMUP — COPY/PASTE CHEAT SHEET
+Apply: https://www.sumup.com/careers/positions/berlin-germany/engineering/senior-fullstack-engineer-superapp/8529500002/
+Resume: upload resume.pdf yourself | Submit: you click Apply now
+
+--- CONTACT ---
+Mohammad Garmabi
+garmabi.mohammad73@gmail.com
++989192727266
+Iran
+https://www.linkedin.com/in/mohammad-garmabi/
+https://github.com/mohamadgarmabi
+
+--- LOCATION / RELOCATE ---
+Currently Iran; willing to relocate to Berlin for office-first role
+
+--- WORK AUTHORIZATION ---
+Will require visa sponsorship — seeking relocation assistance
+
+--- SALARY ---
+€95,000 – €115,000 gross per year (flexible based on level, VSOP, and full package including relocation support, €2k L&D, pension match, and benefits)
+
+--- WHY SUMUP ---
+Fintech at scale, merchant-facing product, strong relocate support, React/TS stack
+
+--- ENGLISH ---
+Professional working proficiency — daily in international remote teams
+
+--- COVER LETTER / MESSAGE ---
+Dear SumUp Hiring Team,
+
+I am applying for the Senior Full-Stack Engineer - SuperApp role in Berlin.
+
+SumUp's mission — empowering millions of small businesses with simple financial tools — aligns with my experience building performant React dashboards and integrating payment systems and third-party APIs in production. I bring 6+ years with React and TypeScript, including Next.js, with measurable impact such as roughly 25% load-time improvements on modular frontends.
+
+I would welcome owning the web side of the SuperApp merchant experience — from first-time user flows to dashboard features — and contributing across the stack with REST APIs and Node.js where needed. I am motivated to relocate to Berlin and join an international, office-first team building products used by millions of merchants worldwide.
+
+Thank you for your consideration.
+
+Best regards,
+Mohammad Garmabi

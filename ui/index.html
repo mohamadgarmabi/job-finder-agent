@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Applier</title>
+  <link rel="stylesheet" href="/static/app.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div>
+        <h1>Job Applications</h1>
+        <p class="subtitle">Open, fill, then mark as sent</p>
+      </div>
+      <button type="button" id="refreshBtn" class="btn btn-ghost">↻ Find new jobs</button>
+    </header>
+
+    <section class="filters card">
+      <div class="filter-row">
+        <label>
+          Country
+          <select id="countryFilter">
+            <option value="all">All countries</option>
+          </select>
+        </label>
+
+        <label>
+          Status
+          <select id="statusFilter">
+            <option value="all">All</option>
+            <option value="To Apply" selected>To Apply</option>
+            <option value="Applied">Applied</option>
+            <option value="Rejected">Rejected</option>
+          </select>
+        </label>
+
+        <label>
+          Date field
+          <select id="dateField">
+            <option value="found">Date found</option>
+            <option value="applied">Date applied</option>
+          </select>
+        </label>
+
+        <label>
+          From
+          <input type="date" id="dateFrom" />
+        </label>
+
+        <label>
+          To
+          <input type="date" id="dateTo" />
+        </label>
+      </div>
+
+      <div class="filter-row">
+        <label>
+          Search scope (LinkedIn)
+          <select id="searchCountry">
+            <option value="all">All countries</option>
+          </select>
+        </label>
+
+        <label class="grow">
+          Search (company / role)
+          <input type="search" id="searchQuery" placeholder="e.g. DualEntry or Frontend..." />
+        </label>
+        <button type="button" id="clearFilters" class="btn btn-ghost">Clear filters</button>
+      </div>
+    </section>
+
+    <div id="statusBar" class="status-bar" hidden></div>
+    <div id="jobList" class="job-list"></div>
+    <p id="emptyState" class="empty" hidden>No jobs found.</p>
+  </div>
+
+  <template id="jobCardTemplate">
+    <article class="job-card card">
+      <div class="job-head">
+        <div>
+          <h2 class="company"></h2>
+          <p class="title"></p>
+        </div>
+        <span class="badge status-badge"></span>
+      </div>
+      <div class="meta"></div>
+      <p class="notes"></p>
+      <div class="actions">
+        <button type="button" class="btn btn-primary fill-btn">Open &amp; fill</button>
+        <button type="button" class="btn btn-success applied-btn">Mark applied ✓</button>
+        <a class="btn btn-ghost link-btn" target="_blank" rel="noopener">Open link</a>
+      </div>
+    </article>
+  </template>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
