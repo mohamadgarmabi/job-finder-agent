@@ -29,8 +29,147 @@ function showStatus(message, isError = false) {
 function statusLabel(status) {
   if (status === "To Apply") return "To Apply";
   if (status === "Applied") return "Applied";
+  if (status === "Skipped") return "Skipped";
   if (status === "Rejected") return "Rejected";
+  if (status === "Interview") return "Interview";
   return status;
+}
+
+function isTerminalStatus(status) {
+  return status === "Applied" || status === "Rejected" || status === "Skipped";
+}
+
+function removeCardFromList(cardEl) {
+  if (!cardEl) return;
+  cardEl.remove();
+  if (!jobList.querySelector(".job-card")) {
+    emptyState.hidden = false;
+  }
+}
+
+function updateCardStatus(cardEl, status) {
+  if (!cardEl) return;
+  const badge = cardEl.querySelector(".status-badge");
+  if (badge) {
+    badge.textContent = statusLabel(status);
+    badge.dataset.status = status;
+  }
+  const fillBtn = cardEl.querySelector(".fill-btn");
+  const appliedBtn = cardEl.querySelector(".applied-btn");
+  const skipBtn = cardEl.querySelector(".skip-btn");
+  const rejectBtn = cardEl.querySelector(".reject-btn");
+  if (isTerminalStatus(status)) {
+    if (fillBtn) fillBtn.disabled = true;
+    if (appliedBtn) {
+      appliedBtn.disabled = true;
+      appliedBtn.textContent = status === "Applied" ? "Applied ✓" : "Mark applied ✓";
+    }
+    if (skipBtn) {
+      skipBtn.disabled = true;
+      skipBtn.textContent = status === "Skipped" ? "Skipped" : "Skip";
+    }
+    if (rejectBtn) {
+      rejectBtn.disabled = true;
+      rejectBtn.textContent = status === "Rejected" ? "Rejected" : "Reject";
+    }
+  }
+}
+
+async function copyText(text, btn) {
+  if (!text) return;
+  try {
+    await navigator.clipboard.writeText(text);
+    if (btn) {
+      const prev = btn.textContent;
+      btn.textContent = "Copied ✓";
+      setTimeout(() => {
+        btn.textContent = prev;
+      }, 1400);
+    } else {
+      showStatus("Copied to clipboard");
+    }
+  } catch {
+    showStatus("Copy failed — select text manually", true);
+  }
+}
+
+function makeCopyRow(label, value, onCopy) {
+  const row = document.createElement("div");
+  row.className = "copy-row";
+
+  const meta = document.createElement("div");
+  meta.className = "copy-row-meta";
+  const lbl = document.createElement("span");
+  lbl.className = "copy-label";
+  lbl.textContent = label;
+  const val = document.createElement("span");
+  val.className = "copy-value";
+  val.textContent = value;
+  meta.append(lbl, val);
+
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "btn btn-ghost copy-row-btn";
+  btn.textContent = "Copy";
+  btn.addEventListener("click", () => onCopy(value, btn));
+
+  row.append(meta, btn);
+  return row;
+}
+
+function renderCopyPanel(card, job) {
+  const panel = card.querySelector(".copy-panel");
+  const toggleBtn = card.querySelector(".copy-toggle-btn");
+  const copyAllBtn = card.querySelector(".copy-all-btn");
+  const contactGrid = card.querySelector(".contact-section .copy-grid");
+  const answersGrid = card.querySelector(".answers-grid");
+  const coverSection = card.querySelector(".cover-section");
+  const answersSection = card.querySelector(".answers-section");
+  const coverText = card.querySelector(".cover-text");
+  const sheetText = card.querySelector(".sheet-text");
+
+  const fields = job.copy_fields || {};
+  const contact = fields.contact || [];
+  const answers = fields.answers || [];
+  const cover = fields.cover_letter || "";
+  const sheet = fields.paste_sheet || "";
+
+  contactGrid.innerHTML = "";
+  for (const item of contact) {
+    contactGrid.appendChild(
+      makeCopyRow(item.label, item.value, (text, btn) => copyText(text, btn))
+    );
+  }
+
+  answersGrid.innerHTML = "";
+  for (const item of answers) {
+    answersGrid.appendChild(
+      makeCopyRow(item.label, item.value, (text, btn) => copyText(text, btn))
+    );
+  }
+
+  coverText.value = cover;
+  sheetText.value = sheet;
+  coverSection.hidden = !cover;
+  answersSection.hidden = answers.length === 0;
+  panel.hidden = true;
+  toggleBtn.textContent = "Copy info ▾";
+
+  toggleBtn.addEventListener("click", () => {
+    const open = panel.hidden;
+    panel.hidden = !open;
+    toggleBtn.textContent = open ? "Copy info ▴" : "Copy info ▾";
+  });
+
+  copyAllBtn.addEventListener("click", () => copyText(sheet, copyAllBtn));
+
+  card.querySelectorAll(".copy-section-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const kind = btn.dataset.copy;
+      const text = kind === "cover" ? cover : sheet;
+      copyText(text, btn);
+    });
+  });
 }
 
 function fillCountrySelect(select, countries) {
@@ -154,6 +293,8 @@ function renderJobs(jobs) {
     else if (job.location) parts.push(`Location: ${job.location}`);
     if (job.date_found) parts.push(`Found: ${job.date_found}`);
     if (job.date_applied) parts.push(`Applied: ${job.date_applied}`);
+    if (job.date_skipped) parts.push(`Skipped: ${job.date_skipped}`);
+    if (job.date_rejected) parts.push(`Rejected: ${job.date_rejected}`);
     if (job.relocate) parts.push(`Relocate: ${job.relocate}`);
     if (job.has_autofill) parts.push("autofill ready");
     meta.textContent = parts.join(" · ");
@@ -164,6 +305,8 @@ function renderJobs(jobs) {
 
     const fillBtn = node.querySelector(".fill-btn");
     const appliedBtn = node.querySelector(".applied-btn");
+    const skipBtn = node.querySelector(".skip-btn");
+    const rejectBtn = node.querySelector(".reject-btn");
     const linkBtn = node.querySelector(".link-btn");
 
     if (job.apply_url) {
@@ -172,10 +315,8 @@ function renderJobs(jobs) {
       linkBtn.hidden = true;
     }
 
-    if (job.status === "Applied") {
-      fillBtn.disabled = true;
-      appliedBtn.disabled = true;
-      appliedBtn.textContent = "Applied ✓";
+    if (isTerminalStatus(job.status)) {
+      updateCardStatus(node.querySelector(".job-card"), job.status);
     }
 
     const card = node.querySelector(".job-card");
@@ -185,6 +326,9 @@ function renderJobs(jobs) {
 
     fillBtn.addEventListener("click", () => fillJob(job, fillBtn));
     appliedBtn.addEventListener("click", () => markApplied(job, appliedBtn, card));
+    skipBtn.addEventListener("click", () => updateJobStatus(job, "Skipped", skipBtn, card));
+    rejectBtn.addEventListener("click", () => updateJobStatus(job, "Rejected", rejectBtn, card));
+    renderCopyPanel(card, job);
 
     jobList.appendChild(node);
   }
@@ -237,24 +381,56 @@ async function markApplied(job, btn, cardEl) {
 
     showStatus(`${job.company} marked as applied ✓`);
 
-    if (removeFromList && cardEl) {
-      cardEl.remove();
-      if (!jobList.querySelector(".job-card")) {
-        emptyState.hidden = false;
-      }
+    if (removeFromList) {
+      removeCardFromList(cardEl);
       return;
     }
 
-    if (cardEl) {
-      const badge = cardEl.querySelector(".status-badge");
-      if (badge) {
-        badge.textContent = "Applied";
-        badge.dataset.status = "Applied";
-      }
-      const fillBtn = cardEl.querySelector(".fill-btn");
-      if (fillBtn) fillBtn.disabled = true;
-      btn.textContent = "Applied ✓";
+    updateCardStatus(cardEl, "Applied");
+  } catch (err) {
+    showStatus("Error: " + err.message, true);
+    btn.disabled = false;
+  }
+}
+
+async function updateJobStatus(job, status, btn, cardEl) {
+  const verb = status === "Skipped" ? "skip" : "reject";
+  const promptText =
+    status === "Rejected"
+      ? `Reject "${job.company}"? (optional reason)`
+      : `Skip "${job.company}"? (optional reason)`;
+  const reason = window.prompt(promptText, "");
+  if (reason === null) return;
+
+  btn.disabled = true;
+  const removeFromList = statusFilter.value === "To Apply";
+
+  try {
+    const res = await fetch("/api/jobs/update-status", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        company: job.company,
+        url: job.url || job.id,
+        status,
+        note: reason.trim() || undefined,
+      }),
+    });
+    const data = await res.json();
+    if (!data.ok) {
+      showStatus(data.error || `Failed to ${verb}`, true);
+      btn.disabled = false;
+      return;
     }
+
+    showStatus(`${job.company} ${status.toLowerCase()} ✓`);
+
+    if (removeFromList) {
+      removeCardFromList(cardEl);
+      return;
+    }
+
+    updateCardStatus(cardEl, status);
   } catch (err) {
     showStatus("Error: " + err.message, true);
     btn.disabled = false;

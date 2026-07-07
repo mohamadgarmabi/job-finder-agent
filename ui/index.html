@@ -31,6 +31,7 @@
             <option value="all">All</option>
             <option value="To Apply" selected>To Apply</option>
             <option value="Applied">Applied</option>
+            <option value="Skipped">Skipped</option>
             <option value="Rejected">Rejected</option>
           </select>
         </label>
@@ -90,6 +91,36 @@
         <button type="button" class="btn btn-primary fill-btn">Open &amp; fill</button>
         <button type="button" class="btn btn-success applied-btn">Mark applied ✓</button>
         <a class="btn btn-ghost link-btn" target="_blank" rel="noopener">Open link</a>
+        <button type="button" class="btn btn-ghost copy-toggle-btn">Copy info ▾</button>
+        <button type="button" class="btn btn-muted skip-btn">Skip</button>
+        <button type="button" class="btn btn-danger reject-btn">Reject</button>
+      </div>
+      <div class="copy-panel" hidden>
+        <div class="copy-toolbar">
+          <button type="button" class="btn btn-ghost copy-all-btn">Copy all</button>
+        </div>
+        <section class="copy-section contact-section">
+          <h3>Contact</h3>
+          <div class="copy-grid"></div>
+        </section>
+        <section class="copy-section cover-section" hidden>
+          <div class="copy-section-head">
+            <h3>Cover letter</h3>
+            <button type="button" class="btn btn-ghost copy-section-btn" data-copy="cover">Copy</button>
+          </div>
+          <textarea class="copy-text cover-text" readonly rows="8"></textarea>
+        </section>
+        <section class="copy-section answers-section" hidden>
+          <h3>Application answers</h3>
+          <div class="copy-grid answers-grid"></div>
+        </section>
+        <section class="copy-section sheet-section">
+          <div class="copy-section-head">
+            <h3>Full paste sheet</h3>
+            <button type="button" class="btn btn-ghost copy-section-btn" data-copy="sheet">Copy</button>
+          </div>
+          <textarea class="copy-text sheet-text" readonly rows="10"></textarea>
+        </section>
       </div>
     </article>
   </template>

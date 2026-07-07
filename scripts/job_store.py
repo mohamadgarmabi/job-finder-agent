@@ -53,15 +53,52 @@ def mark_applied(
     applied_date: str | None = None,
     url: str | None = None,
 ) -> dict:
+    return update_status(
+        company,
+        "Applied",
+        url=url,
+        date_value=applied_date or date.today().isoformat(),
+        date_field="date_applied",
+        note_suffix="Applied via job-applier UI.",
+    )
+
+
+def update_status(
+    company: str,
+    status: str,
+    *,
+    url: str | None = None,
+    note: str | None = None,
+    date_value: str | None = None,
+    date_field: str | None = None,
+    note_suffix: str | None = None,
+) -> dict:
+    allowed = {"Applied", "Rejected", "Skipped", "To Apply", "Interview"}
+    if status not in allowed:
+        raise ValueError(f"Invalid status: {status}")
+
     jobs = load_jobs()
     idx = find_job_index(jobs, url=url, company=company)
     job = jobs[idx]
-    job["status"] = "Applied"
-    job["date_applied"] = applied_date or date.today().isoformat()
-    note = f"Applied {job['date_applied']} via job-applier UI."
-    existing = job.get("notes", "")
-    if "Applied" not in existing:
-        job["notes"] = f"{existing} {note}".strip() if existing else note
+    job["status"] = status
+
+    if date_field and date_value:
+        job[date_field] = date_value
+    elif status == "Applied" and not job.get("date_applied"):
+        job["date_applied"] = date.today().isoformat()
+    elif status == "Skipped":
+        job["date_skipped"] = date.today().isoformat()
+    elif status == "Rejected":
+        job["date_rejected"] = date.today().isoformat()
+
+    suffix = note_suffix or note
+    if suffix:
+        stamp = date.today().isoformat()
+        line = f"{suffix} ({stamp})" if stamp not in suffix else suffix
+        existing = job.get("notes", "")
+        if line not in existing:
+            job["notes"] = f"{existing} {line}".strip() if existing else line
+
     jobs[idx] = job
     save_jobs(jobs)
     return job

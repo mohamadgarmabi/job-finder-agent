@@ -823,7 +823,7 @@
     "title": "Senior Full-Stack (Node/React) Developer",
     "url": "https://pt.linkedin.com/jobs/view/senior-full-stack-node-react-developer-at-lionhires-recruitment-4434503892",
     "apply_url": "https://pt.linkedin.com/jobs/view/senior-full-stack-node-react-developer-at-lionhires-recruitment-4434503892",
-    "status": "To Apply",
+    "status": "Applied",
     "date_found": "2026-07-07",
     "match_score": 100,
     "match_breakdown": {
@@ -843,8 +843,8 @@
       "role_match": []
     },
     "relocate": "visa support",
-    "remote": true,
-    "notes": "Found via job-finder (linkedin). Resume match: react, nextjs, typescript, frontend, node.js. Package prepared 2026-07-07.",
+    "remote": false,
+    "notes": "Found via job-finder (linkedin). Resume match: react, nextjs, typescript, frontend, node.js. Package prepared 2026-07-07. Applied 2026-07-07 via job-applier UI.",
     "country": "Portugal",
     "location": "Lisbon, Portugal",
     "cover_letter_draft": "Dear LionHires / Hiring Team,\n\nI am applying for the Senior Full-Stack (Node/React) Developer role supporting your fintech payments platform partner in Lisbon.\n\nThis role aligns closely with my background: 6+ years building production React and Next.js applications with TypeScript, integrating payment systems and third-party APIs, and shipping measurable performance improvements — including roughly 25% load-time gains on modular dashboard products. I have hands-on experience across the stack you describe: Node.js/NestJS backends, GraphQL and REST integrations, Material UI frontends, and engineering practices such as automated testing, clean architecture, and collaborative agile delivery.\n\nI am especially motivated by the opportunity to work on high-load fintech systems where code quality and reliability directly impact millions of transactions. The relocation package and full visa support for Lisbon are a strong fit for my goal to relocate to Europe with my family.\n\nI would welcome discussing how I can contribute to scaling your payments platform and delivering complex provider integrations.\n\nThank you for your consideration.\n\nBest regards,\nMohammad Garmabi",
@@ -864,6 +864,147 @@
       "github": "https://github.com/mohamadgarmabi",
       "resume": "resume.pdf",
       "location": "Iran"
-    }
+    },
+    "date_applied": "2026-07-07"
+  },
+  {
+    "company": "FxPro",
+    "title": "Senior Node.js Developer",
+    "url": "https://cy.linkedin.com/jobs/view/senior-node-js-developer-at-fxpro-4437156175",
+    "apply_url": "https://cy.linkedin.com/jobs/view/senior-node-js-developer-at-fxpro-4437156175",
+    "status": "Applied",
+    "date_found": "2026-07-07",
+    "match_score": 88,
+    "match_breakdown": {
+      "primary": [
+        "typescript",
+        "javascript",
+        "front-end"
+      ],
+      "secondary": [
+        "node.js",
+        "docker",
+        "graphql"
+      ],
+      "role_match": []
+    },
+    "relocate": "work permit",
+    "remote": false,
+    "notes": "Found via job-finder (linkedin). Resume match: typescript, javascript, front-end, node.js, docker. Package prepared 2026-07-07. Applied 2026-07-07 via job-applier UI.",
+    "country": "Cyprus",
+    "location": "Limassol, Cyprus",
+    "cover_letter_draft": "Dear FxPro Hiring Team,\n\nI am applying for the Senior Node.js Developer role in Limassol.\n\nFxPro's scale — 600+ people across multiple international offices building fintech infrastructure for payments, banking, and trading — is exactly the kind of high-stakes backend environment where I want to contribute. Over 6+ years I have shipped production TypeScript/JavaScript systems end to end: integrating payment flows and third-party APIs, building performant services with strong testing discipline, and collaborating in agile teams where reliability and low latency matter.\n\nI bring deep experience with Node.js, asynchronous programming, GraphQL/REST integrations, Docker, and microservice-oriented architecture, plus enough frontend context to collaborate effectively with product teams. Financial-services experience through payment integrations, combined with a focus on reusable, testable code and incident-driven improvement, maps well to your payments and banking processing stack.\n\nThe relocation bonus and work-permit support for Cyprus align with my goal to relocate to Europe. I would welcome the chance to help FxPro deliver robust, high-availability services at global scale.\n\nThank you for your consideration.\n\nBest regards,\nMohammad Garmabi",
+    "application_answers": {
+      "location": "Iran (currently remote); open to relocation to Limassol, Cyprus with work-permit support",
+      "salary_expectation": "€50,000 – €70,000 EUR annually, flexible based on benefits and relocation package",
+      "english_level": "C1+ professional — fluent written and spoken English in distributed teams",
+      "visa_relocate_interest": "Yes — interested in relocation to Cyprus with visa/work-permit support",
+      "years_experience": "6+ years commercial development; 4+ years Node.js/TypeScript in production",
+      "why_role": "Global fintech at scale, payments/banking backends, and a supported move to Cyprus."
+    },
+    "autofill": {
+      "name": "Mohammad Garmabi",
+      "email": "garmabi.mohammad73@gmail.com",
+      "phone": "+989192727266",
+      "linkedin": "https://www.linkedin.com/in/mohammad-garmabi/",
+      "github": "https://github.com/mohamadgarmabi",
+      "resume": "resume.pdf",
+      "location": "Iran"
+    },
+    "date_applied": "2026-07-07"
+  },
+  {
+    "company": "Shiftmove",
+    "title": "Software Engineer - Frontend (all genders)",
+    "url": "https://ch.linkedin.com/jobs/view/software-engineer-frontend-all-genders-at-shiftmove-4423616396",
+    "apply_url": "https://ch.linkedin.com/jobs/view/software-engineer-frontend-all-genders-at-shiftmove-4423616396",
+    "status": "Applied",
+    "date_found": "2026-07-07",
+    "match_score": 69,
+    "match_breakdown": {
+      "primary": [
+        "typescript",
+        "frontend",
+        "front-end"
+      ],
+      "secondary": [
+        "python"
+      ],
+      "role_match": [
+        "software engineer"
+      ]
+    },
+    "relocate": "relocate",
+    "remote": false,
+    "notes": "Found via job-finder (linkedin). Resume match: typescript, frontend, front-end, python. Package prepared 2026-07-07. Applied 2026-07-07 via job-applier UI.",
+    "country": "Switzerland",
+    "location": "Zurich, Zurich, Switzerland",
+    "cover_letter_draft": "Dear Shiftmove Hiring Team,\n\nI am applying for the Software Engineer - Frontend role on the Avrios product team in Zurich.\n\nShiftmove's mission — building connected mobility products that turn fleet data into actionable decisions for thousands of B2B customers across Europe — resonates with the kind of product engineering I enjoy: complex operational UIs, measurable user impact, and end-to-end ownership from idea to release. I bring 6+ years shipping production frontend applications in TypeScript, with a strong foundation in performance, clean UI, automated testing, and close collaboration with product and design.\n\nAt scale I have delivered modular React dashboards with ~25% load-time improvements, integrated third-party APIs in production, and mentored teams on maintainable architecture. I am comfortable owning features across the lifecycle, evaluating trade-offs, and shipping reliably in fast release cycles — skills that map directly to Avrios's fleet-management and AI-assisted workflow challenges.\n\nI am based in Iran today, work effectively with distributed European teams, and am genuinely interested in relocating to Zurich for your hybrid model with regular in-person collaboration. Visa support where applicable would be essential for my move.\n\nThank you for your consideration.\n\nBest regards,\nMohammad Garmabi",
+    "application_answers": {
+      "location": "Iran (currently remote); open to relocation to Zurich, Switzerland",
+      "salary_expectation": "CHF 110,000 – €130,000 annually, flexible based on total package",
+      "english_level": "C1+ professional — daily use in international product teams",
+      "visa_relocate_interest": "Yes — willing to relocate to Zurich; visa support needed",
+      "years_experience": "6+ years building production frontend applications in TypeScript",
+      "why_role": "B2B mobility product at scale, end-to-end feature ownership, and relocation to Switzerland."
+    },
+    "autofill": {
+      "name": "Mohammad Garmabi",
+      "email": "garmabi.mohammad73@gmail.com",
+      "phone": "+989192727266",
+      "linkedin": "https://www.linkedin.com/in/mohammad-garmabi/",
+      "github": "https://github.com/mohamadgarmabi",
+      "resume": "resume.pdf",
+      "location": "Iran"
+    },
+    "date_applied": "2026-07-07"
+  },
+  {
+    "company": "Synthesia",
+    "title": "Senior Frontend Engineer - Design System",
+    "url": "https://ch.linkedin.com/jobs/view/senior-frontend-engineer-design-system-at-synthesia-4437191257",
+    "apply_url": "https://ch.linkedin.com/jobs/view/senior-frontend-engineer-design-system-at-synthesia-4437191257",
+    "status": "Applied",
+    "date_found": "2026-07-07",
+    "match_score": 93,
+    "match_breakdown": {
+      "primary": [
+        "react",
+        "typescript",
+        "javascript",
+        "frontend"
+      ],
+      "secondary": [
+        "design system"
+      ],
+      "role_match": [
+        "frontend engineer",
+        "senior frontend"
+      ]
+    },
+    "relocate": "sponsor visa",
+    "remote": false,
+    "notes": "Found via job-finder (linkedin). Resume match: react, typescript, javascript, frontend, design system. Package prepared 2026-07-07. Applied 2026-07-07 via job-applier UI.",
+    "country": "Switzerland",
+    "location": "Zurich, Zurich, Switzerland",
+    "cover_letter_draft": "Dear Synthesia Hiring Team,\n\nI am applying for the Senior Frontend Engineer - Design System role.\n\nSynthesia's design-system challenge — building a shared UI foundation that both engineers and AI agents can use to produce on-brand, accessible interfaces — is one of the most interesting frontend problems in the industry right now. I bring 6+ years shipping React and TypeScript at scale, including design-system work, component architecture in Nx monorepos, and a relentless focus on performance, accessibility, and developer experience.\n\nI have led frontend initiatives with measurable impact: modular React dashboards with ~25% load-time improvements, Lighthouse-driven optimization, and production patterns for testing and documentation that help teams ship consistently. I care deeply about component APIs that stay stable under change, tooling that accelerates product teams, and the kind of machine-readable interfaces (Storybook, tokens, guidelines) that make AI-assisted development actually work in practice.\n\nI am based in Iran today, collaborate daily with international engineering teams in English, and am motivated to relocate to Zurich or another Synthesia hub in Europe where visa support is available. The opportunity to co-own a design system powering products used by Fortune 100 companies is exactly where I want to grow next.\n\nThank you for your consideration.\n\nBest regards,\nMohammad Garmabi",
+    "application_answers": {
+      "location": "Iran (currently remote); open to relocation to Zurich or other Synthesia European offices",
+      "salary_expectation": "CHF/EUR 120,000+ base annually, aligned with your published range and open to stock options",
+      "english_level": "C1+ professional — daily use in distributed engineering teams",
+      "visa_relocate_interest": "Yes — relocation to Switzerland/Europe with visa sponsorship where applicable",
+      "years_experience": "6+ years React/TypeScript; hands-on design-system and component-library experience",
+      "why_role": "AI-friendly design systems at global scale — the intersection of React craft, DX, and product impact."
+    },
+    "autofill": {
+      "name": "Mohammad Garmabi",
+      "email": "garmabi.mohammad73@gmail.com",
+      "phone": "+989192727266",
+      "linkedin": "https://www.linkedin.com/in/mohammad-garmabi/",
+      "github": "https://github.com/mohamadgarmabi",
+      "resume": "resume.pdf",
+      "location": "Iran"
+    },
+    "date_applied": "2026-07-07"
   }
 ]

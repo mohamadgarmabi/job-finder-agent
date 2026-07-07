@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import mimetypes
+import re
 import sys
 import threading
 from http.server import BaseHTTPRequestHandler, HTTPServer
@@ -14,10 +15,11 @@ from urllib.parse import parse_qs, urlparse
 ROOT = Path(__file__).resolve().parent.parent
 UI_DIR = ROOT / "ui"
 SCRIPTS_DIR = ROOT / "scripts"
+PROFILE_PATH = ROOT / "career_profile.md"
 
 sys.path.insert(0, str(SCRIPTS_DIR))
 
-from job_store import load_jobs, mark_applied  # noqa: E402
+from job_store import load_jobs, mark_applied, update_status  # noqa: E402
 
 PORT = 8765
 _fill_lock = threading.Lock()
@@ -76,7 +78,126 @@ def filter_jobs(
     )
 
 
+def parse_profile_contact() -> dict[str, str]:
+    if not PROFILE_PATH.is_file():
+        return {}
+    text = PROFILE_PATH.read_text(encoding="utf-8")
+    contact: dict[str, str] = {}
+    in_contact = False
+    for line in text.splitlines():
+        stripped = line.strip()
+        if stripped.lower() == "## contact":
+            in_contact = True
+            continue
+        if in_contact and stripped.startswith("## "):
+            break
+        if not in_contact or not stripped.startswith("- "):
+            continue
+        body = stripped[2:]
+        if ":" not in body:
+            continue
+        key, val = body.split(":", 1)
+        key = key.strip().lower()
+        val = val.strip().strip("<>").strip()
+        if val and val != "<!-- Fill in before applying -->":
+            contact[key] = val
+    name_m = re.search(r"^## name\s*\n+(.+)$", text, re.M | re.I)
+    if name_m:
+        contact.setdefault("name", name_m.group(1).strip())
+    return contact
+
+
+def merge_autofill(job: dict) -> dict[str, str]:
+    profile = parse_profile_contact()
+    autofill = dict(job.get("autofill") or {})
+    defaults = {
+        "name": profile.get("name", ""),
+        "email": profile.get("email", ""),
+        "phone": profile.get("phone", ""),
+        "linkedin": profile.get("linkedin", ""),
+        "github": profile.get("github", ""),
+        "location": job.get("location") or profile.get("location", ""),
+        "resume": autofill.get("resume", "resume.pdf"),
+    }
+    for key, val in defaults.items():
+        autofill.setdefault(key, val)
+    return {k: v for k, v in autofill.items() if v}
+
+
+def build_copy_fields(job: dict) -> dict:
+    autofill = merge_autofill(job)
+    answers = job.get("application_answers") or {}
+    cover = (job.get("cover_letter_draft") or "").strip()
+
+    contact_labels = {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "location": "Location",
+        "resume": "Resume file",
+    }
+    contact = [
+        {"key": key, "label": contact_labels[key], "value": autofill[key]}
+        for key in contact_labels
+        if autofill.get(key)
+    ]
+
+    answer_labels = {
+        "location": "Location / relocation",
+        "salary_expectation": "Salary",
+        "english_level": "English level",
+        "visa_relocate_interest": "Visa / relocation",
+        "years_experience": "Experience",
+        "why_role": "Why this role",
+        "why_dualentry": "Why this company",
+        "est_overlap": "Timezone overlap",
+    }
+    answer_rows = []
+    for key, val in answers.items():
+        if not val:
+            continue
+        label = answer_labels.get(key, key.replace("_", " ").title())
+        answer_rows.append({"key": key, "label": label, "value": val})
+
+    return {
+        "contact": contact,
+        "cover_letter": cover,
+        "answers": answer_rows,
+        "paste_sheet": build_paste_sheet(job, autofill, cover, answer_rows),
+    }
+
+
+def build_paste_sheet(
+    job: dict,
+    autofill: dict[str, str],
+    cover: str,
+    answer_rows: list[dict],
+) -> str:
+    lines = [
+        f"{job.get('company', '')} — {job.get('title', '')}",
+        f"URL: {job.get('apply_url') or job.get('url', '')}",
+        f"Resume: upload {autofill.get('resume', 'resume.pdf')} | Submit: you click Apply",
+        "",
+        "--- CONTACT ---",
+    ]
+    for key in ("name", "email", "phone", "linkedin", "github"):
+        if autofill.get(key):
+            lines.append(autofill[key])
+    if autofill.get("location"):
+        lines.append(f"Location: {autofill['location']}")
+    if cover:
+        lines.extend(["", "--- COVER LETTER ---", cover])
+    if answer_rows:
+        lines.extend(["", "--- SHORT ANSWERS ---"])
+        for row in answer_rows:
+            lines.append(f"{row['label']}: {row['value']}")
+    return "\n".join(lines).strip()
+
+
 def public_job(job: dict) -> dict:
+    copy_fields = build_copy_fields(job)
     return {
         "id": job.get("url"),
         "company": job.get("company"),
@@ -84,6 +205,8 @@ def public_job(job: dict) -> dict:
         "status": job.get("status"),
         "date_found": job.get("date_found"),
         "date_applied": job.get("date_applied"),
+        "date_skipped": job.get("date_skipped"),
+        "date_rejected": job.get("date_rejected"),
         "match_score": job.get("match_score"),
         "match_breakdown": job.get("match_breakdown"),
         "apply_url": job.get("apply_url") or job.get("url"),
@@ -94,6 +217,7 @@ def public_job(job: dict) -> dict:
         "has_autofill": bool(job.get("autofill")),
         "has_cover_letter": bool(job.get("cover_letter_draft")),
         "notes": job.get("notes", ""),
+        "copy_fields": copy_fields,
     }
 
 
@@ -231,6 +355,32 @@ class Handler(BaseHTTPRequestHandler):
                 job = mark_applied(company, body.get("date_applied"), url=url)
                 self._send_json({"ok": True, "job": public_job(job)})
             except KeyError as exc:
+                self._send_json({"ok": False, "error": str(exc)}, 404)
+            return
+
+        if path == "/api/jobs/update-status":
+            company = (body.get("company") or "").strip()
+            url = (body.get("url") or body.get("id") or "").strip() or None
+            status = (body.get("status") or "").strip()
+            if not company and not url:
+                self._send_json({"ok": False, "error": "company or url required"}, 400)
+                return
+            if status not in ("Skipped", "Rejected", "To Apply", "Interview"):
+                self._send_json({"ok": False, "error": "status must be Skipped or Rejected"}, 400)
+                return
+            try:
+                note = (body.get("note") or "").strip() or None
+                suffix = {
+                    "Skipped": "Skipped via UI — not applying.",
+                    "Rejected": "Rejected via UI — not interested.",
+                    "To Apply": "Moved back to To Apply via UI.",
+                    "Interview": "Marked as Interview via UI.",
+                }.get(status, f"Status set to {status} via UI.")
+                if note:
+                    suffix = f"{suffix} Reason: {note}"
+                job = update_status(company, status, url=url, note_suffix=suffix)
+                self._send_json({"ok": True, "job": public_job(job)})
+            except (KeyError, ValueError) as exc:
                 self._send_json({"ok": False, "error": str(exc)}, 404)
             return
 
