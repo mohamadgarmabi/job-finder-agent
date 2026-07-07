@@ -817,5 +817,53 @@
     "country": "India",
     "location": "Bengaluru, Karnataka, India",
     "date_applied": "2026-07-06"
+  },
+  {
+    "company": "LionHires Recruitment",
+    "title": "Senior Full-Stack (Node/React) Developer",
+    "url": "https://pt.linkedin.com/jobs/view/senior-full-stack-node-react-developer-at-lionhires-recruitment-4434503892",
+    "apply_url": "https://pt.linkedin.com/jobs/view/senior-full-stack-node-react-developer-at-lionhires-recruitment-4434503892",
+    "status": "To Apply",
+    "date_found": "2026-07-07",
+    "match_score": 100,
+    "match_breakdown": {
+      "primary": [
+        "react",
+        "nextjs",
+        "typescript",
+        "frontend"
+      ],
+      "secondary": [
+        "node.js",
+        "nestjs",
+        "material ui",
+        "graphql",
+        "full-stack"
+      ],
+      "role_match": []
+    },
+    "relocate": "visa support",
+    "remote": true,
+    "notes": "Found via job-finder (linkedin). Resume match: react, nextjs, typescript, frontend, node.js. Package prepared 2026-07-07.",
+    "country": "Portugal",
+    "location": "Lisbon, Portugal",
+    "cover_letter_draft": "Dear LionHires / Hiring Team,\n\nI am applying for the Senior Full-Stack (Node/React) Developer role supporting your fintech payments platform partner in Lisbon.\n\nThis role aligns closely with my background: 6+ years building production React and Next.js applications with TypeScript, integrating payment systems and third-party APIs, and shipping measurable performance improvements — including roughly 25% load-time gains on modular dashboard products. I have hands-on experience across the stack you describe: Node.js/NestJS backends, GraphQL and REST integrations, Material UI frontends, and engineering practices such as automated testing, clean architecture, and collaborative agile delivery.\n\nI am especially motivated by the opportunity to work on high-load fintech systems where code quality and reliability directly impact millions of transactions. The relocation package and full visa support for Lisbon are a strong fit for my goal to relocate to Europe with my family.\n\nI would welcome discussing how I can contribute to scaling your payments platform and delivering complex provider integrations.\n\nThank you for your consideration.\n\nBest regards,\nMohammad Garmabi",
+    "application_answers": {
+      "location": "Iran (currently remote); open to relocation to Lisbon, Portugal with visa support",
+      "salary_expectation": "€55,000 – €75,000 EUR annually, flexible based on total package and benefits",
+      "english_level": "C1+ professional — daily use in remote teams, code reviews, and technical writing",
+      "visa_relocate_interest": "Yes — interested in full relocation to Lisbon with visa support for myself and family",
+      "years_experience": "6+ years commercial web development; 3+ years React/Next.js and Node.js/NestJS in production",
+      "why_role": "Fintech payments at scale, full-stack ownership, and a clear relocation path to Portugal."
+    },
+    "autofill": {
+      "name": "Mohammad Garmabi",
+      "email": "garmabi.mohammad73@gmail.com",
+      "phone": "+989192727266",
+      "linkedin": "https://www.linkedin.com/in/mohammad-garmabi/",
+      "github": "https://github.com/mohamadgarmabi",
+      "resume": "resume.pdf",
+      "location": "Iran"
+    }
   }
 ]
