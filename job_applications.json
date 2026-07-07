@@ -632,12 +632,12 @@
     "title": "Software Engineer - Frontend Autonomous Air System V&V",
     "url": "https://de.linkedin.com/jobs/view/software-engineer-frontend-autonomous-air-system-v-v-at-helsing-4350226149",
     "apply_url": "https://de.linkedin.com/jobs/view/software-engineer-frontend-autonomous-air-system-v-v-at-helsing-4350226149",
-    "status": "To Apply",
+    "status": "Applied",
     "date_found": "2026-07-05",
     "match_score": 40,
     "relocate": "relocation support",
     "remote": false,
-    "notes": "Found via job-finder (linkedin). Tech: frontend.",
+    "notes": "Found via job-finder (linkedin). Tech: frontend. Applied 2026-07-06 via job-applier UI.",
     "country": "Germany",
     "location": "Berlin, Berlin, Germany",
     "match_breakdown": {
@@ -648,6 +648,174 @@
       "role_match": [
         "software engineer"
       ]
-    }
+    },
+    "date_applied": "2026-07-06"
+  },
+  {
+    "company": "think-cell Software",
+    "title": "Senior Full Stack Developer",
+    "url": "https://de.linkedin.com/jobs/view/senior-full-stack-developer-at-think-cell-software-4385259438",
+    "apply_url": "https://de.linkedin.com/jobs/view/senior-full-stack-developer-at-think-cell-software-4385259438",
+    "status": "Applied",
+    "date_found": "2026-07-06",
+    "date_applied": "2026-07-06",
+    "match_score": 63,
+    "match_breakdown": {
+      "primary": [
+        "typescript"
+      ],
+      "secondary": [
+        "node.js",
+        "python",
+        "full-stack",
+        "full stack"
+      ],
+      "role_match": []
+    },
+    "relocate": "relocation support",
+    "remote": false,
+    "location": "Berlin, Germany",
+    "cover_letter_draft": "Dear think-cell Hiring Team,\n\nI am applying for the Senior Full Stack Developer role in Berlin.\n\nYour focus — shipping production TypeScript systems that bring AI-assisted features to a product used by 1.3M+ professionals — is exactly where I want to contribute. I bring 6+ years building React/Next.js/TypeScript applications with measurable performance gains (~25% load-time improvements, Lighthouse 100 on key surfaces), production API integrations, and daily use of AI-assisted development (Cursor, Copilot) in real product work.\n\nI am strongest on the frontend and TypeScript architecture side, with hands-on Node.js for APIs and integrations. I ramp quickly on backend depth in collaborative teams and care deeply about code quality, reviews, and shipping reliable features. I am based in Iran today, communicate clearly in English with international teams, and am genuinely interested in relocating to Berlin with think-cell's relocation support.\n\nThank you for your consideration.\n\nBest regards,\nMohammad Garmabi",
+    "application_answers": {
+      "location": "Iran — open to relocation to Berlin with company relocation support",
+      "salary_expectation": "€75,000 – €95,000 gross annual (flexible based on think-cell band and total package)",
+      "relocation_interest": "Yes — interested in relocating to Berlin with relocation support",
+      "typescript_node_experience": "6+ years TypeScript in production React/Next.js products; Node.js for APIs, integrations, and tooling",
+      "ai_tools_daily": "Yes — Cursor, GitHub Copilot, and ChatGPT daily; built personal automation/agent tooling",
+      "english_level": "Professional working proficiency — daily use in remote engineering teams",
+      "proud_project": "Migrating a large React product to an Nx monorepo with micro-frontends — ~25% load-time improvement and Lighthouse 100 on key surfaces while the team kept shipping features."
+    },
+    "autofill": {
+      "name": "Mohammad Garmabi",
+      "email": "garmabi.mohammad73@gmail.com",
+      "phone": "+989192727266",
+      "linkedin": "https://www.linkedin.com/in/mohammad-garmabi/",
+      "github": "https://github.com/mohamadgarmabi",
+      "resume": "resume.pdf",
+      "location": "Iran"
+    },
+    "notes": "Applied 2026-07-06 via LinkedIn. TypeScript/Node, AI features, Berlin relocation.",
+    "country": "Germany"
+  },
+  {
+    "company": "Above",
+    "title": "Full-Stack Design Technologist",
+    "url": "https://se.linkedin.com/jobs/view/full-stack-design-technologist-at-above-4412806855",
+    "apply_url": "https://se.linkedin.com/jobs/view/full-stack-design-technologist-at-above-4412806855",
+    "status": "Applied",
+    "date_found": "2026-07-06",
+    "match_score": 59,
+    "match_breakdown": {
+      "primary": [
+        "react",
+        "next.js",
+        "typescript"
+      ],
+      "secondary": [
+        "python",
+        "full-stack"
+      ],
+      "role_match": []
+    },
+    "relocate": "work permit",
+    "remote": false,
+    "notes": "Found via job-finder (linkedin). Resume match: react, next.js, typescript, python, full-stack. Applied 2026-07-06 via job-applier UI.",
+    "country": "Sweden",
+    "location": "Stockholm, Stockholm County, Sweden",
+    "date_applied": "2026-07-06"
+  },
+  {
+    "company": "Kyndryl",
+    "title": "Full Stack Developer",
+    "url": "https://sg.linkedin.com/jobs/view/full-stack-developer-at-kyndryl-4435412253",
+    "apply_url": "https://sg.linkedin.com/jobs/view/full-stack-developer-at-kyndryl-4435412253",
+    "status": "Rejected",
+    "date_found": "2026-07-06",
+    "match_score": 81,
+    "match_breakdown": {
+      "primary": [
+        "react",
+        "javascript",
+        "frontend"
+      ],
+      "secondary": [
+        "node.js",
+        "python",
+        "docker",
+        "graphql",
+        "full-stack",
+        "full stack"
+      ],
+      "role_match": []
+    },
+    "relocate": "visa sponsorship",
+    "remote": false,
+    "notes": "JD explicitly states 'No work visa sponsorship' — conflicts with relocate_visa_only search. Skipped.",
+    "country": "Singapore",
+    "location": "Singapore, Singapore"
+  },
+  {
+    "company": "Spotware Systems",
+    "title": "Senior Frontend Developer (React)",
+    "url": "https://cy.linkedin.com/jobs/view/senior-frontend-developer-react-at-spotware-systems-4436963944",
+    "apply_url": "https://cy.linkedin.com/jobs/view/senior-frontend-developer-react-at-spotware-systems-4436963944",
+    "status": "Applied",
+    "date_found": "2026-07-06",
+    "match_score": 100,
+    "match_breakdown": {
+      "primary": [
+        "react",
+        "react.js",
+        "next.js",
+        "typescript",
+        "frontend"
+      ],
+      "secondary": [
+        "redux",
+        "mui",
+        "ssr",
+        "playwright"
+      ],
+      "role_match": [
+        "frontend developer",
+        "senior frontend"
+      ]
+    },
+    "relocate": "relocation support",
+    "remote": false,
+    "notes": "Found via job-finder (linkedin). Resume match: react, react.js, next.js, typescript, frontend. Applied 2026-07-06 via job-applier UI.",
+    "country": "Cyprus",
+    "location": "Limassol, Limassol, Cyprus",
+    "date_applied": "2026-07-06"
+  },
+  {
+    "company": "Recrew AI",
+    "title": "Full Stack Engineer",
+    "url": "https://in.linkedin.com/jobs/view/full-stack-engineer-at-recrew-ai-4435557920",
+    "apply_url": "https://in.linkedin.com/jobs/view/full-stack-engineer-at-recrew-ai-4435557920",
+    "status": "Applied",
+    "date_found": "2026-07-06",
+    "match_score": 88,
+    "match_breakdown": {
+      "primary": [
+        "react",
+        "next.js",
+        "typescript",
+        "frontend"
+      ],
+      "secondary": [
+        "node.js",
+        "full stack"
+      ],
+      "role_match": [
+        "full stack engineer"
+      ]
+    },
+    "relocate": "relocation",
+    "remote": false,
+    "notes": "Found via job-finder (linkedin). Resume match: react, next.js, typescript, frontend, node.js. Applied 2026-07-06 via job-applier UI.",
+    "country": "India",
+    "location": "Bengaluru, Karnataka, India",
+    "date_applied": "2026-07-06"
   }
 ]

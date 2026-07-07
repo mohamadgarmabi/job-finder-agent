@@ -1,0 +1,40 @@
+THINK-CELL — COPY/PASTE CHEAT SHEET
+Apply: https://de.linkedin.com/jobs/view/senior-full-stack-developer-at-think-cell-software-4385259438
+Resume: upload resume.pdf | Submit: you click Apply
+
+--- CONTACT ---
+Mohammad Garmabi
+garmabi.mohammad73@gmail.com
++989192727266
+Iran
+https://www.linkedin.com/in/mohammad-garmabi/
+https://github.com/mohamadgarmabi
+
+--- RELOCATION ---
+Yes — interested in relocating to Berlin with think-cell relocation support
+
+--- SALARY ---
+€75,000 – €95,000 gross annual (flexible based on think-cell band and total package)
+
+--- TYPESCRIPT / NODE ---
+6+ years TypeScript in production React/Next.js products; Node.js for APIs, integrations, and tooling
+
+--- AI TOOLS ---
+Yes — Cursor, GitHub Copilot, and ChatGPT daily; built personal automation/agent tooling
+
+--- ENGLISH ---
+Professional working proficiency — daily use in remote engineering teams
+
+--- COVER LETTER / MESSAGE ---
+Dear think-cell Hiring Team,
+
+I am applying for the Senior Full Stack Developer role in Berlin.
+
+Your focus — shipping production TypeScript systems that bring AI-assisted features to a product used by 1.3M+ professionals — is exactly where I want to contribute. I bring 6+ years building React/Next.js/TypeScript applications with measurable performance gains (~25% load-time improvements, Lighthouse 100 on key surfaces), production API integrations, and daily use of AI-assisted development (Cursor, Copilot) in real product work.
+
+I am strongest on the frontend and TypeScript architecture side, with hands-on Node.js for APIs and integrations. I ramp quickly on backend depth in collaborative teams and care deeply about code quality, reviews, and shipping reliable features. I am based in Iran today, communicate clearly in English with international teams, and am genuinely interested in relocating to Berlin with think-cell's relocation support.
+
+Thank you for your consideration.
+
+Best regards,
+Mohammad Garmabi
